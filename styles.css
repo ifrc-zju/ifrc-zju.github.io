@@ -553,12 +553,20 @@ img {
 /* 研究方向嵌入图谱：不打断 body 渐变，与 iframe 内背景同一套色 */
 .section.section-research-topology {
   background: transparent;
-  padding-bottom: 1.25rem;
+  padding-bottom: 0.25rem;
 }
 
 /* 研究成果展示图与团队成员：收紧相邻节间距 */
 .section.section-research-topology + #people.section {
-  padding-top: 1.25rem;
+  padding-top: 0.5rem;
+}
+
+#people #people-title {
+  margin-top: 0;
+}
+
+#people > .container > .subsec:first-of-type {
+  margin-top: 0.75rem;
 }
 
 /* About Section */
@@ -1584,7 +1592,7 @@ img {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   background: transparent;
   border: none;
   border-radius: 0;
@@ -2571,11 +2579,11 @@ img {
   }
 
   .section.section-research-topology {
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
   }
 
   .section.section-research-topology + #people.section {
-    padding-top: 0.75rem;
+    padding-top: 0.35rem;
   }
 
   .container {
