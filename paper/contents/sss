@@ -1,0 +1,667 @@
+status: published
+title: "Silencing the Guardrails：基于动态上下文表示消融的推理阶段越狱攻击"
+title_en: "Silencing the Guardrails: Inference-Time Jailbreaking via Dynamic Contextual Representation Ablation"
+authors: [Wenpeng Xing, Moran Fang, Guangtai Wang, Changting Lin, Meng Han*]
+affiliations: [Zhejiang University, Binjiang Institute of Zhejiang University, GenTel.io]
+venue: "ACL Findings 2026"
+doi: "N/A"
+arxiv: "N/A"
+date: 2026
+keywords: [Jailbreak, Inference-Time Intervention, Contextual Representation Ablation, LLM Safety]
+tags: [安全越狱, 推理干预, 白盒攻击]
+code: "N/A"
+project_page: "N/A"
+
+--------------------------------------------------------------------------------
+[Silencing the Guardrails：基于动态上下文表示消融的推理阶段越狱攻击]
+📌 一句话总结
+我们提出上下文表示消融（CRA）框架，在多个开源大语言模型（如Llama-2）上达到了53.0%以上的攻击成功率，解决了现有的基于离散优化的白盒攻击计算成本高且生成的越狱提示词语义不连贯的问题
+。
+🔬 核心贡献
+贡献 1：提出了一种免训练的推理阶段干预方法（CRA），通过在解码期间动态屏蔽大模型隐藏状态中诱发拒绝行为的子空间，从而绕过安全约束机制
+。
+贡献 2：设计了基于梯度归因的多维度神经元重要性评分机制（融合敏感性、显著性和 Top-k 过滤器），能够实时、精准地定位与当前上下文对应的安全拒绝机制维度
+。
+贡献 3：在内部表示层面上揭示了现有对齐机制的脆弱性，证明了安全约束可以通过几何维度的干预从内部表示中剥离，而无需对模型权重进行永久性修改
+。
+🧪 关键结果
+数据集A上指标：在具有严格安全对齐的 Llama-2-7B-Chat 模型上，ASR-Overall（整体攻击成功率）达到了 53.0%，相比于基于梯度的离散优化基线方法 PEZ（3.3%）实现了 15.2 倍的性能提升
+。
+对比SOTA方法：在严苛的 AdvBench 测试集中，CRA 的表现（76.0%）显著优于模型级别的干预基线 DSN（68.7%）
+。在维持高越狱成功率的同时，仅需数秒即可生成流畅连贯的输出，大幅优于 GCG 等需要数千次梯度步的方法
+。
+消融实验关键结论：大模型的拒绝机制具有类似“全有或全无”的特性。在 Llama-2 上，当干预强度系数 λ 接近 1.0 时发生剧烈的相变，攻击成功率飙升 24.0%（达到 64.0%），且拒绝消除率（RRSR）急剧上升至 96.3%
+。
+🤝 合作情况
+合作单位：Zhejiang University, Binjiang Institute of Zhejiang University, GenTel.io
+我方贡献：提出方法框架、实验主导及分析
+。
+备注：Wenpeng Xing 为第一作者，Meng Han 为通讯作者
+。
+📂 资源
+论文 PDF：[1_ACL_Findings_2026_大模型白盒越狱_Silencing the Guardrails.pdf]
+代码：N/A
+演示/海报：N/A
+数据：N/A
+视频讲解：N/A
+status: published
+title: "MCP-Guard：面向代理AI模型上下文协议安全的多阶段纵深防御框架"
+title_en: "MCP-Guard: A Multi-Stage Defense-in-Depth Framework for Securing Model Context Protocol in Agentic AI"
+authors: [Wenpeng Xing*, Zhonghao Qi*, Yupeng Qin, Yilin Li, Caini Chang, Jiahui Yu, Changting Lin, Zhenzhen Xie, Meng Han†]
+affiliations: [Zhejiang University, Binjiang Institute of Zhejiang University, The Chinese University of Hong Kong, Shandong University, GenTel.io]
+venue: "ACL Findings 2026"
+doi: "N/A"
+arxiv: "N/A"
+date: 2026
+keywords: [Model Context Protocol, Defense-in-Depth, Agentic AI, Prompt Injection, Tool Poisoning]
+tags: [Agent安全, 多层防御, MCP协议]
+code: "N/A"
+project_page: "N/A"
+
+--------------------------------------------------------------------------------
+[MCP-Guard：面向代理AI模型上下文协议安全的多阶段纵深防御框架]
+📌 一句话总结
+我们提出了 MCP-GUARD 三阶段防御框架，在 MCP-ATTACKBENCH 威胁检测上达到了 89.1% 的平均 F1 分数，并将系统延迟降低了 51%，解决了大模型接入模型上下文协议（MCP）外部工具时面临的提示词注入和工具投毒等运行时安全问题
+。
+🔬 核心贡献
+贡献 1：提出了一种结合轻量级静态语法扫描、深层神经语义检测和 LLM 认知仲裁的“三阶段纵深防御”架构，巧妙平衡了安全检测的高准确率和交互式 Agent 工作流所需的毫秒级低延迟
+。
+贡献 2：构建并发布了名为 MCP-ATTACKBENCH 的大规模针对性评测基准，包含经 GPT-4 增强生成的 70,448 个样本，覆盖了隐藏调用、提示词注入、工具毒化等传统检测器难以捕捉的 MCP 专属攻击载体
+。
+贡献 3：在第二阶段精调了多语言 E5 文本嵌入模型，使其能够精确地从看似合规的自然语言请求中捕捉隐含的攻击意图，准确率高达 96.01%
+。
+🧪 关键结果
+数据集A上指标：在 MCP-ATTACKBENCH 数据集上，该框架相较于独立依靠 LLM 仲裁的方法，F1 分数绝对提升了 23.4%（达到 89.1%），整体平均延迟控制在 455.9 毫秒内，实现了 2.04 倍的加速
+。
+对比SOTA方法：在使用 GPT-4o-mini 为后端的配置下，MCP-GUARD 综合 F1 得分高达 95.4%，精确度和召回率分别为 91.5% 和 99.5%，不仅大幅避免了 SafeMCP 误报过高的问题，在检测隐蔽攻击时也全面优于 MCP-Scan
+。
+消融实验关键结论：第一阶段正则能够以不足 2ms 的延迟快速过滤约 38.9% 的显式攻击威胁；第三阶段（LLM 仲裁）仅在神经网络给出的威胁概率处于模糊区间（例如 0.45 < P < 0.55）时触发，大幅降低了计算开销
+。
+🤝 合作情况
+合作单位：Zhejiang University, Binjiang Institute of Zhejiang University, The Chinese University of Hong Kong, Shandong University, GenTel.io
+。
+我方贡献：提出防御框架设计、数据构建与流水线评估
+。
+备注：Wenpeng Xing 与 Zhonghao Qi 为共同第一作者，Meng Han 为通讯作者
+。
+📂 资源
+论文 PDF：[2_ACL_Findings_2026_模型工具调用安全_MCP_Guard.pdf]
+代码：N/A
+演示/海报：N/A
+数据：[提及将在未来发布 MCP-ATTACKBENCH]
+视频讲解：N/A
+status: preprint
+title: "Latent Fusion Jailbreak：融合有害与无害表示以诱导大模型不安全输出"
+title_en: "Latent Fusion Jailbreak: Blending Harmful and Harmless Representations to Elicit Unsafe LLM Outputs"
+authors: [Wenpeng Xing, Mohan Li, Chunqiang Hu, Haitao Xu, Ningyu Zhang, Bo Lin, Meng Han]
+affiliations: [Zhejiang University, Binjiang Institute of Zhejiang University, GenTel.io]
+venue: "arXiv"
+doi: "N/A"
+arxiv: "N/A"
+date: 2026
+keywords: [Large Language Models, jailbreak attack, latent space attack, safety alignment, adversarial defense, hidden state interpolation, adversarial training]
+tags: [大模型越狱, 潜空间攻击, 隐藏状态插值]
+code: "N/A"
+project_page: "N/A"
+
+--------------------------------------------------------------------------------
+[Latent Fusion Jailbreak：融合有害与无害表示以诱导大模型不安全输出]
+📌 一句话总结
+我们提出了潜空间融合越狱（LFJ）的白盒攻击框架，在 LLaMA-3、Mistral 等五种模型上达到了平均 94.01% 的攻击成功率，解决了传统的基于离散 token 优化的方法（如 GCG）计算量大且生成文本常常是高困惑度乱码的问题
+。
+🔬 核心贡献
+贡献 1：提出隐状态插值 (HSI) 机制，基于“语义伪装”的直觉，在模型计算图内部将有害查询的隐藏状态与其在句法和主题上极度相似的良性查询（通过辅助模型生成）相融合，从而规避安全机制
+。
+贡献 2：设计了梯度引导的优化策略，可动态识别安全拒绝发挥作用的关键层，并平衡插值系数，以此最大化越狱成功率、兼顾输出流畅度并大幅减少运算开销
+。
+贡献 3：发现并针对性地提出了一种潜空间对抗训练防御（Latent Adversarial Training Defense），通过在对抗插值后的隐藏状态上进行微调，将安全机制拉回到拒绝流形内，提供了一种应对大模型内部几何操纵的保护手段
+。
+🧪 关键结果
+数据集A上指标：在包含 AdvBench, ToxicChat 等四个高难度安全评测集的平均测试中，LFJ 的攻击成功率（ASR）高达 94.01%，相比基线大幅提升
+。
+对比SOTA方法：优于 AdvPrompter 的 89.51% 及 PAIR 的 83.80%，并远远甩开其他内部表示抑制攻击如 DSN 的 55.81%。且由于是连续空间插值，生成的越狱内容非常流畅自然（困惑度极低），轻松规避困惑度过滤器
+。
+消融实验关键结论：如果将融合特征中的“良性遮蔽查询”替换为随机的、不相关的主题，则会导致 LFJ 攻击成功率从 94.01% 暴跌至 32.34%（下降超 61%），证明主题及语境相似性是彻底击穿当前主流对齐防线的核心破绽
+。而使用所提的对抗训练防御后，能够以对常规指令微小受损的代价，将同源越狱 ASR 压制 80% 以上（降至 12.45%）
+。
+🤝 合作情况
+合作单位：Zhejiang University 等（结合相关记录推断：浙江大学, 浙江大学滨江研究院, GenTel.io）
+。
+备注：Wenpeng Xing 为第一作者，Meng Han 等参与合作
+。
+📂 资源
+论文 PDF：[3_arxiv_大模型白盒越狱_latentfusionjailbreak.pdf]
+代码：N/A
+演示/海报：N/A
+数据：N/A
+视频讲解：N/A
+status: preprint
+title: "DISF：基于双路径内部状态强制框架的RAG幻觉检测"
+title_en: "DISF: Detecting Hallucinations in Retrieval-Augmented Generation via Dual-path Internal State Forcing Framework"
+authors: [Zhe Yu*, Wenpeng Xing*, Wenjie Luo, Weize Xu, Lingtong Huang, Yourong Chen, Changting Lin, Meng Han†]
+affiliations: [Binjiang Institute of Zhejiang University, Zhejiang University, Communication University of Zhejiang, Zhejiang Shuren University, GenTel.io]
+venue: "arXiv"
+doi: "N/A"
+arxiv: "N/A"
+date: 2026
+keywords: [Hallucination Detection, Retrieval-Augmented Generation, Internal State Forcing, White-box Framework]
+tags: [RAG幻觉, 白盒检测, 内部状态特征]
+code: "N/A"
+project_page: "N/A"
+
+--------------------------------------------------------------------------------
+[DISF：基于双路径内部状态强制框架的RAG幻觉检测]
+📌 一句话总结
+我们提出了 DISF 白盒幻觉检测框架，在 RagTruth 和 HalluRAG 基准上达到了先进的幻觉分类与事实判断性能，解决了在 RAG 场景中模型经常忽略外部上下文而盲目依赖参数记忆，且高置信度“事实幻觉”极难被采样指标发现的问题
+。
+🔬 核心贡献
+贡献 1：提出“双路径内部状态强制”策略（Dual-Path Internal State-Forcing），使模型在带有文档（CTX）和无文档（NOCTX）两种状态下经历同一生成轨迹，从而精确分离并构造出识别知识冲突所需的对比负信号
+。
+贡献 2：精心提取了反映生成偏离的三大类细粒度特征簇：冲突特征 (Conflict)、跨层隐藏状态的轨迹漂移特征 (Drift) 以及层级预测发散的内部不稳定性特征 (Instability)
+。
+贡献 3：使用 Sparse Top-K Mean 策略对可变长度序列进行特征融合，以 XGBoost 处理特征异质性和数据稀缺性，大幅超越基于采样或高开销 DNN 的传统方法
+。
+🧪 关键结果
+数据集A上指标：在 LLaMA3-8B 等 6 种骨干模型上，其在开放 RagTruth 评测集最高得到 0.9354 AUROC，在冲突测试 HalluRAG 最高达到 0.9582 AUROC
+。
+对比SOTA方法：综合性能大幅超过无监督不确定性方法（如 SelfCheckGPT 的 0.6039）及最先进的监督层级基线模型（如 FactoScope 的 0.8779）
+。此外，DISF 与幻觉严重程度也呈现极高的皮尔逊相关系数（PCC最高可达 0.6880）
+。
+消融实验关键结论：模型架构决定了其发生幻觉的指纹机制：LLaMA3-8B 更关注轨迹的漂移信号（Drift）；LLaMA2-13B 更容易受到不稳定特征 (Instability) 的支配；而“轨迹漂移” (Drift) 表现为几乎所有架构用于检测幻觉的通用支柱信号
+。
+🤝 合作情况
+合作单位：Binjiang Institute of Zhejiang University, Zhejiang University, Communication University of Zhejiang, Zhejiang Shuren University, GenTel.io
+。
+我方贡献：提出检测框架、进行白盒模型实验分析等。
+备注：Zhe Yu 和 Wenpeng Xing 为共同第一作者，Meng Han 为通讯作者
+。
+📂 资源
+论文 PDF：[4_arxiv_共一第二_白盒模型幻觉检测_指导RA完成_DISF.pdf]
+代码：N/A
+演示/海报：N/A
+数据：N/A
+视频讲解：N/A
+status: submitted
+title: "SproutBench：面向青少年的安全与符合伦理的大型语言模型评测基准"
+title_en: "SproutBench: A Benchmark for Safe and Ethical Large Language Models for Youth"
+authors: [Wenpeng Xing, Lanyi Wei, Haixiao Hu, Jingyi Yu, Rongchang Li, Mohan Li, Changting Lin, Meng Han]
+affiliations: [Zhejiang University, GenTel.io]
+venue: "AAAI 2026"
+doi: "N/A"
+arxiv: "N/A"
+date: 2026
+keywords: [Child-centric AI, LLM Safety, SproutBench, Developmental alignment]
+tags: [大模型安全, 青少年对齐, 评测基准]
+code: "N/A"
+project_page: "N/A"
+
+--------------------------------------------------------------------------------
+[SproutBench：面向青少年的安全与符合伦理的大型语言模型评测基准]
+📌 一句话总结
+我们提出了专为青少年定制的 SproutBench 大模型评测基准，在覆盖不同年龄段模型的安全伦理测试上达到了揭示其漏洞的效果，解决了现有安全基准（如JailbreakBench）严重偏向成人语境且忽视未成年人特定发展需求的问题
+。
+🔬 核心贡献
+贡献 1：构建了涵盖 1,283 个对抗性提示词的特有数据集。数据集划分为三个儿童/青少年发展阶段（0–6岁，7–12岁，13–18岁），涵盖了诸如“模仿网络恶作剧”、“学术作弊企图”等成人基准中缺失的特定风险测试
+。
+贡献 2：建立了一套结合知识库、儿童心理学家人工审核与 GPT 模型交互提示管道的方法论，可自动生成并改写出高度贴合真实年龄心智动机和词汇习惯的对抗性测试用例
+。
+贡献 3：在多样化且前沿的各类开源或闭源 LLMs 进行了综合横向对比，揭示了目前大模型对齐机制在面对未成年复杂认知与情感风险时的短板
+。
+🧪 关键结果
+数据集A上指标：针对基准中包含数十种主流模型的打分，Llama2-70B（均分4.58）和 Llama2-7B（均分4.61）对齐表现最佳，在年龄适应性各维度均超过了 4.5 分
+。
+性能缺陷发现：小尺寸模型（如 SmolLM2-135m 和 TinyLlama-1.1B）的抗风险能力极其薄弱，分别仅拿到 3.26 和 3.41 的总均分；同时，phi3:3.8b 模型在面向 13-18 岁的高难度查询（如情感咨询及隐晦伦理）中表现出显著下滑（降至 3.11），暴露出模型在此发展阶段安全性不足的问题
+。
+🤝 合作情况
+合作单位：Zhejiang University, GenTel.io 等
+我方贡献：领导基准测试集开发与大模型综合评测。
+备注：当前在 AAAI 2026 的提交审查状态
+。
+📂 资源
+论文 PDF：[5_arxiv_一作_大模型的儿童发展性对齐评测_SproutBench.pdf]
+代码：[附带开源，参见附录描述]
+演示/海报：N/A
+数据：[开源]
+视频讲解：N/A
+
+
+以下是为您整理的编号 6-10 的 source 论文的结构化信息，已严格按照您指定的格式生成：
+
+```yaml
+status: published
+title: "通过增强少样本学习从大语言模型中有效提取个人身份信息"
+title_en: "Effective PII Extraction from LLMs through Augmented Few-Shot Learning"
+authors: [Shuai Cheng, Shu Meng, Haitao Xu*, Haoran Zhang, Shuai Hao, Chuan Yue, Wenrui Ma, Meng Han, Fan Zhang, Zhao Li]
+affiliations: [Zhejiang University, Old Dominion University, Colorado School of Mines, Zhejiang Gongshang University, Hangzhou Yugu Technology]
+venue: "USENIX Security 2025"
+doi: "N/A"
+arxiv: "N/A"
+date: 2025-08-13
+keywords: [LLMs, PII Extraction, Privacy, Few-Shot Learning]
+tags: [大模型隐私, 数据提取, 少样本学习]
+code: "https://doi.org/10.5281/zenodo.15544879"
+project_page: "N/A"
+```
+---
+# [通过增强少样本学习从大语言模型中有效提取个人身份信息]
+
+## 📌 一句话总结
+> 我们提出了一种基于增强少样本学习（Augmented Few-Shot Learning）的方法，在多个主流闭源大模型上达到了极高的个人身份信息（PII）提取成功率，解决了现有方法成功率低且高度依赖模型微调接口或越狱技巧的问题。
+
+## 🔬 核心贡献
+- 贡献 1：针对非目标 PII 提取（Non-targeted），提出了一种基于在线学习机制的少样本示例选择与替换方法，从而促使大模型输出大量且高准确度的隐私数据。
+- 贡献 2：针对目标 PII 提取（Targeted），提出了基于提示链（Prompt Chaining）的查询增强技术，通过引导 LLM 逐步生成目标人物的补充信息，显著提升了针对特定目标的攻击成功率。
+- 贡献 3：无需微调（Fine-tuning）或越狱（Jailbreaking），仅通过直接查询便能在低成本下实现高效的隐私数据提取，并通过对提取数据源的溯源分析揭示了消费者网站是隐私泄露的核心源头。
+
+## 🧪 关键结果
+- 数据集A上指标：在非目标提取任务中，该方法在四大模型（GPT-4o, GPT-4, GPT-3.5, Claude-3.5）上进行了 8000 次查询，共提取出 3,912 条真实的 PII 数据，攻击成功率达 48.9%，单条 PII 的提取成本仅为 0.012 美元。
+- 对比SOTA方法：在目标提取任务中，相比于当前的 SOTA 方法（如 Janus），在各类上下文提示组合下，提取的成功率绝对提升了 10% 到 60%。
+- 消融实验关键结论：非目标替换策略（即动态移除测试池中的非训练 PII，并加入 LLM 吐出的真实训练 PII）至关重要。如果移除该策略，GPT-4o 的提取成功率会由 65.0% 暴跌至 24.2%。
+
+## 🤝 合作情况
+- **合作单位**：浙江大学、老道明大学、科罗拉多矿业学院、浙江工商大学、杭州语谷科技。
+- **备注**：Haitao Xu 为通讯作者，Meng Han 为合作作者。
+
+## 📂 资源
+- 论文 PDF：[6_Effective PII Extraction from LLMs through Augmented Few-Shot Learning.pdf]
+- 代码：[https://doi.org/10.5281/zenodo.15544879]
+- 演示/海报：N/A
+- 数据：开源
+- 视频讲解：N/A
+
+<br>
+
+```yaml
+status: preprint
+title: "GenTel-Safe：防御提示注入攻击的统一基准与屏蔽框架"
+title_en: "GenTel-Safe: A Unified Benchmark and Shielding Framework for Defending Against Prompt Injection Attacks"
+authors: [Rongchang Li, Minjie Chen, Chang Hu, Han Chen, Wenpeng Xing, Meng Han*]
+affiliations: [GenTel.io, Zhejiang University]
+venue: "未知"
+doi: "N/A"
+arxiv: "N/A"
+date: 2024
+keywords: [Prompt Injection, LLM Security, Attack Detection Benchmark, GenTel-Shield]
+tags: [提示词注入, 数据集基准, 安全防御]
+code: "https://gentellab.github.io/gentel-safe.github.io/"
+project_page: "https://gentellab.github.io/gentel-safe.github.io/"
+```
+---
+# [GenTel-Safe：防御提示注入攻击的统一基准与屏蔽框架]
+
+## 📌 一句话总结
+> 我们提出了一套统一的检测框架 GenTel-Shield 及基准测试集 GenTel-Bench，在提示词注入检测任务上达到了最先进（SOTA）的识别效果，解决了大语言模型对越狱和目标劫持攻击防范能力弱、缺乏系统性评估场景的问题。
+
+## 🔬 核心贡献
+- 贡献 1：构建了名为 GenTel-Bench 的大规模基准数据集，包含 84,812 个提示注入攻击样本，全面覆盖了 3 大类（越狱、目标劫持、提示泄露）和 28 个具体的安全细分场景。
+- 贡献 2：提出了一种与大模型解耦的新型安全屏蔽前置模型 GenTel-Shield，该模型基于多语言 E5 文本嵌入构建，并采用了数据增强训练技术提升鲁棒性。
+- 贡献 3：整合了 10 大类 LLM 典型应用场景与安全风险，提供了针对攻击方式与业务上下文交叉的全面测评分类体系，并在多语言泛化上表现出卓越的一致性。
+
+## 🧪 关键结果
+- 数据集A上指标：在 GenTel-Bench 测试集上，GenTel-Shield 针对越狱（Jailbreak）攻击的检测成功率达 97.63%（F1 分数为 97.69%），针对目标劫持（Target Hijacking）攻击的检测成功率达 96.81%（F1 分数为 96.74%）。
+- 对比SOTA方法：综合指标远超 ProtectAI、Hyperion、Prompt Guard 和 Lakera AI 等主流商用/开源检测工具，在精确区分恶意注入与良性用户输入方面误报率最低。
+- 消融实验关键结论：Token 长度测试实验表明，虽然输入长度限制会在一定程度上影响检测性能，但当 Token 长度提升至 384 以上时，各检测模型的性能均趋于稳定和最优。
+
+## 🤝 合作情况
+- **合作单位**：GenTel.io、Zhejiang University。
+- **备注**：Meng Han 为通讯作者。
+
+## 📂 资源
+- 论文 PDF：[7_GenTel-Safe.pdf]
+- 代码：[https://gentellab.github.io/gentel-safe.github.io/]
+- 演示/海报：N/A
+- 数据：[https://gentellab.github.io/gentel-safe.github.io/]
+- 视频讲解：N/A
+
+<br>
+
+```yaml
+status: published
+title: "面向大语言模型安全解除对齐的参数定位与重学习"
+title_en: "PARAMETER LOCALIZATION AND RELEARNING FOR SAFETY DISALIGNMENT IN LARGE LANGUAGE MODELS"
+authors: [Yi Zhou*, Wenpeng Xing*, Changting Lin, Dezhang Kong, Chunqiang Hu, Meng Han+]
+affiliations: [Zhejiang University, Binjiang Institute of Zhejiang University, Chongqing University, GenTel.io]
+venue: "ICASSP 2026"
+doi: "N/A"
+arxiv: "N/A"
+date: 2026
+keywords: [LLM Safety Disalignment, White-box Jailbreak Attack, Parameter Localization, Parameter Relearning]
+tags: [模型编辑, 参数定位, 白盒越狱]
+code: "N/A"
+project_page: "N/A"
+```
+---
+# [面向大语言模型安全解除对齐的参数定位与重学习]
+
+## 📌 一句话总结
+> 我们提出了一种基于梯度驱动的参数定位与局部重学习白盒越狱框架，在 Llama2、Qwen2.5 等主流模型上达到了 100% 的攻击成功率，解决了传统基于微调的越狱方法可解释性差且参数更新开销过大的问题。
+
+## 🔬 核心贡献
+- 贡献 1：通过构造有害和无害提示词的对比数据集并进行正向激活，精准提取模型内部与安全对齐功能最相关的关键参数状态。
+- 贡献 2：设计了结合梯度余弦相似度与梯度幅值的“条件定位方法”（Conditional Localization），系统性地识别出在恶意上下文中起主导防御作用的极少数神经元。
+- 贡献 3：引入目标参数专用的“加权交叉熵损失”（Weighted Cross-Entropy Loss），在冻结其他参数的情况下，仅对选定的极少参数进行重学习，从而彻底剥除安全约束。
+
+## 🧪 关键结果
+- 数据集A上指标：在四个主流开源大模型（Llama2, Qwen2.5, DeepSeek, Mistral）上，针对安全对齐的越狱攻击成功率（ASR）全线达到 100%。
+- 对比SOTA方法：相比于传统的全参微调或离散 Prompt 优化攻击，本方法仅需微调极少量的特定安全参数，大大减少了参数开销，且实现了极强的越狱迁移性。
+- 消融实验关键结论：在 MMLU 和 HellaSwag 等常规自然语言能力基准测试中，由于仅干预了安全相关参数，被越狱模型的常规任务成绩与原版模型几乎保持一致，未发生“灾难性遗忘”或通用性能下降。
+
+## 🤝 合作情况
+- **合作单位**：浙江大学、浙江大学滨江研究院、重庆大学、GenTel.io。
+- **备注**：Yi Zhou 与 Wenpeng Xing 为共同第一作者，Meng Han 为通讯作者。
+
+## 📂 资源
+- 论文 PDF：[8_ICASSP_2026_共一第二_模型编辑_指导RA完成_Parameter_Localization_and_Relearning_for_Safety_Disalignment_in_Large_Language_Models.pdf]
+- 代码：N/A
+- 演示/海报：N/A
+- 数据：N/A
+- 视频讲解：N/A
+
+<br>
+
+```yaml
+status: published
+title: "NCDI-Diffusion：通过扩散模型进行新视角合成的神经上下文与方向逆演"
+title_en: "NCDI-Diffusion: Neural Contextual and Directional Inversion for Novel View Synthesis through Diffusion Models"
+authors: [Wenpeng Xing, Jie Chen*, Zaifeng Yang, Xin Tong, Changting Lin, Meng Han]
+affiliations: [Zhejiang University, Hong Kong Baptist University, Agency for Science Technology and Research Singapore, People's Public Security University of China, GenTel.io]
+venue: "ICASSP"
+doi: "N/A"
+arxiv: "N/A"
+date: 2026
+keywords: [Novel View Synthesis, Diffusion Models, Textual Inversion, Neural Descriptors]
+tags: [新视角生成, 扩散模型, 图像重建]
+code: "N/A"
+project_page: "N/A"
+```
+---
+# [NCDI-Diffusion：通过扩散模型进行新视角合成的神经上下文与方向逆演]
+
+## 📌 一句话总结
+> 我们提出 NCDI-Diffusion 方法，通过神经上下文与方向逆演将相机位姿信息桥接到文本嵌入空间，在稀疏视角图像上达到了极佳的三维场景视图渲染质量，解决了新视角合成任务高度依赖海量训练图片的问题。
+
+## 🔬 核心贡献
+- 贡献 1：提出了一种基于预训练文本到图像（T2I）扩散大模型的新视角合成框架，大幅度减少了高质量场景渲染所需的源视角图像数据量。
+- 贡献 2：设计了上下文与方向逆演（CDI）模块，基于输入的稀疏多视角图像和目标相机位姿，提取神经描述符（Neural Descriptors），将复杂的几何方向特征成功映射到文本上下文中。
+- 贡献 3：在不破坏预训练扩散模型（如 Stable Diffusion）原始权重的前提下，利用额外的占位符 Token 增强了模型对场景一致性的记忆与控制生成能力。
+
+## 🧪 关键结果
+- 暂缺详细对比结果表（受限于给定文本摘录仅包含首页标题和引用），但依据摘要及架构图，其能利用预训练扩散模型完成高质量 Rendered Images 的生成。
+- 消融实验关键结论：利用额外增加的 $N_p$ 个占位符 Token（Placeholder token），显著增强了对源视角场景特定的上下文特征重构能力，使得扩散模型即使在稀疏图片训练下仍能确保视角渲染输出的一致性。
+
+## 🤝 合作情况
+- **合作单位**：浙江大学、香港浸会大学、新加坡 A*STAR 研究所、中国人民公安大学、GenTel.io。
+- **我方贡献**：第一作者主导方法设计与实验。
+- **备注**：Wenpeng Xing 为第一作者，Jie Chen 为通讯作者。
+
+## 📂 资源
+- 论文 PDF：[9_ICASSP_一作_扩散模型做新视角图片生成_NCDI-Diffusion.pdf]
+- 代码：N/A
+- 演示/海报：N/A
+- 数据：N/A
+- 视频讲解：N/A
+
+<br>
+
+```yaml
+status: published
+title: "IDCNet：面向泛化Deepfake检测的图像分解与跨视角蒸馏"
+title_en: "IDCNet: Image Decomposition and Cross-View Distillation for Generalizable Deepfake Detection"
+authors: [Zhiyuan Wang, Yanxiang Chen*, Yuanzhi Yao, Meng Han, Wenpeng Xing, Meng Li]
+affiliations: [Hefei University of Technology, Zhejiang University]
+venue: "IEEE Transactions on Information Forensics and Security"
+doi: "N/A"
+arxiv: "N/A"
+date: 2024
+keywords: [Face forgery detection, deepfake detection, multi-view learning, representation disentanglement, mutual information]
+tags: [Deepfake检测, 跨视角蒸馏, 特征解耦]
+code: "N/A"
+project_page: "N/A"
+```
+---
+# [IDCNet：面向泛化Deepfake检测的图像分解与跨视角蒸馏]
+
+## 📌 一句话总结
+> 我们提出了 IDCNet 深度伪造检测框架，在 CDFv2 和 DFDC 数据集上达到了业界领先的跨库泛化识别效果，解决了现有检测方法过度拟合特定篡改工件、难以在未知伪造数据集上保持鲁棒性的问题。
+
+## 🔬 核心贡献
+- 贡献 1：提出了图像分解与多视角学习架构，将面部图像特征显式分离，独立捕捉全局内容特征（Content）与局部伪造细节特征（Detail），防止细粒度篡改痕迹的丢失。
+- 贡献 2：设计了跨视角蒸馏（Cross-View Distillation）策略，利用互信息和知识蒸馏剥离任务无关噪声，实现双视角表征的有效知识互补。
+- 贡献 3：提出一种能够适配现成骨干网络（如 ResNet、EfficientNet）的特征对齐模块，能够以即插即用的方式大幅增强基础模型对局部伪造线索的泛化敏感度。
+
+## 🧪 关键结果
+- 数据集A上指标：在五个严苛的跨数据集（Cross-dataset）场景中，IDCNet 维持了极强的内部表现（AUC=0.9696, EER=0.9187）并展现出卓越的泛化能力。
+- 对比SOTA方法：在极具挑战的 CDFv2 数据集上，该方法达到 0.8089 的 AUC（较第二名提升 4.4%）及 0.7361 的 EER（提升 5%）；在 DFDC 数据集上达到 0.7244 的 AUC（提升 5.6%）及 0.6605 的 EER（提升 6%）。
+- 消融实验关键结论：图像分解视角的双轨分析能够稳步提取不受特定 GAN 伪造算法局限的泛化性工件，而跨视角蒸馏的介入使得 EER（等错误率）出现显著且一致的下降，验证了架构设计在捕捉泛化篡改伪影上的有效性。
+
+## 🤝 合作情况
+- **合作单位**：合肥工业大学、浙江大学。
+- **备注**：Zhiyuan Wang 等来自合肥工业大学，Yanxiang Chen 为可能通讯，Meng Han, Wenpeng Xing 作为合作作者提供技术协助。
+
+## 📂 资源
+- 论文 PDF：[10_IDCNet_Image_Decomposition_and_Cross-View_Distillation_for_Generalizable_Deepfake_Detection.pdf]
+- 代码：N/A
+- 演示/海报：N/A
+- 数据：N/A
+- 视频讲解：N/A
+
+以下是为您提取和整理的编号11-15的source文献结构化信息，已严格按照您提供的格式要求生成：
+
+```yaml
+status: published
+title: "IDCNet：面向泛化Deepfake检测的图像分解与跨视角蒸馏"
+title_en: "IDCNet: Image Decomposition and Cross-View Distillation for Generalizable Deepfake Detection"
+authors: [Zhiyuan Wang, Yanxiang Chen*, Yuanzhi Yao, Meng Han, Wenpeng Xing, Meng Li]
+affiliations: [Hefei University of Technology, Zhejiang University]
+venue: "IEEE Transactions on Information Forensics and Security (TIFS)"
+doi: "10.1109/TIFS.2025.3593353"
+arxiv: "N/A"
+date: 2025-07-28
+keywords: [Face forgery detection, deepfake detection, multi-view learning, representation disentanglement, mutual information]
+tags: [Deepfake检测, 图像分解, 跨视角蒸馏]
+code: "https://github.com/wangzhiyuan120/idcnet"
+project_page: "N/A"
+```
+---
+# [IDCNet：面向泛化Deepfake检测的图像分解与跨视角蒸馏]
+
+## 📌 一句话总结
+> 我们提出IDCNet深度伪造检测框架，在CDFv2等跨数据集上达到了超越SOTA的泛化识别效果，解决了现有模型在提取全图特征时对全局特征产生偏置、导致局部细粒度伪造线索丢失的问题。
+
+## 🔬 核心贡献
+- 贡献 1：提出轻量级双目标U-Net生成器进行图像分解，将人脸图像精确分离为保留语义的“全局内容视图（Content）”和捕捉高频伪影的“局部细节视图（Detail）”，对全局和局部篡改进行独立分析。
+- 贡献 2：设计了变分互蒸馏（VMD）和变分交叉蒸馏（VCD）相结合的跨视角蒸馏策略，促进双视图间的双向知识迁移，有效剥离任务无关噪声并强化伪造特征。
+- 贡献 3：提出一种即插即用的轻量级特征对齐（Feature Alignment）方法，无需改变现有深度伪造检测模型的网络架构，即可利用分解出的局部细节特征来大幅提升现有模型的检测性能。
+
+## 🧪 关键结果
+- 数据集A上指标：在严苛的跨数据集泛化测试中，IDCNet在CDFv2数据集上的AUC达到了0.8089，相比此前最优方法提升了4.4%。
+- 对比SOTA方法：在FF++、CDFv1、CDFv2、DFDC等多个数据集上超越了现有基准；其特征对齐策略融合到SIA基线模型后，在CDFv1上的AUC激增25.7%（达0.7961），在CDFv2上提升14.2%（达0.8079）。
+- 消融实验关键结论：双编码器架构中，采用ResNet50或EfficientNetB4处理局部视图能获得最佳泛化性；引入Block Wise或Gaussian Blur等破坏高频细节的扰动对模型检测率影响最大，而颜色饱和度扰动影响极小。
+
+## 🤝 合作情况
+- **合作单位**：合肥工业大学、浙江大学滨江研究院
+- **备注**：Yanxiang Chen 为通讯作者。
+
+## 📂 资源
+- 论文 PDF：[11_IDCNet_Image_Decomposition_and_Cross-View_Distillation_for_Generalizable_Deepfake_Detection.pdf]
+- 代码：[https://github.com/wangzhiyuan120/idcnet]
+- 演示/海报：N/A
+- 数据：N/A
+- 视频讲解：N/A
+
+<br>
+
+```yaml
+status: submitted
+title: "IDE：一种数据驱动的多智能体协同动态大模型评测框架"
+title_en: "IDE: A Multi-Agent-Driven Iterative Framework for Dynamic Evaluation of LLMs"
+authors: [Xin Tong, Bo Jin*, Jingya Wang, Wenpeng Xing, Tian Xia, Meng Han]
+affiliations: [People's Public Security University of China, The Third Research Institute of the Ministry of Public Security of China, Zhejiang University, Renmin University of China]
+venue: "未知"
+doi: "N/A"
+arxiv: "N/A"
+date: 2024
+keywords: [large language models, benchmark, evaluation, multi-agent]
+tags: [动态评测, 多智能体, 大模型评估]
+code: "N/A"
+project_page: "N/A"
+```
+---
+# [IDE：一种数据驱动的多智能体协同动态大模型评测框架]
+
+## 📌 一句话总结
+> 我们提出基于多智能体协同的动态评估框架IDE，在BoolQ、GSM8K等基准上达到了持续生成复杂变异样本的效果，解决了静态基准测试集泛化性不足且极易发生数据泄露作弊的问题。
+
+## 🔬 核心贡献
+- 贡献 1：提出了一种多智能体协同（样本过滤、迭代决策、工具调用、验证生成等）的动态评测框架，能够灵活生成具有高度复杂性的变异测试样本，真实反映大模型能力的演进。
+- 贡献 2：采用迭代与混合增强策略，在多轮工具调用中对种子数据进行不断演化，逐步增加测试场景的挑战性和多样性。
+- 贡献 3：引入了类似RLHF过程中的对比排序选择策略以筛选最佳增强样本，并采用多模型投票（Dual Verification）与负样本生成验证机制，确保最终评估集的高质量与纯净度。
+
+## 🧪 关键结果
+- 数据集A上指标：在IDE处理后的动态数据集上，GPT-4等前沿大模型的表现出现显著下滑，例如在BoolQ和GSM8K上分别下降了10.84%和17.50%，有效暴露了其在复杂逻辑和数学任务中的短板。
+- 对比SOTA方法：同等迭代轮数下，与 Benchmark Self-Evolving 和随机采样（RS）方法相比，IDE 生成的对比优选样本能导致所有评测模型出现更大幅度的准确率回撤，验证了其生成难例的高效性。
+- 消融实验关键结论：迭代决策代理中的“对比决策”机制对于生成高质量变异样本至关重要；不使用多智能体对比筛选而直接随机变异会导致生成的测试题缺乏挑战性。
+
+## 🤝 合作情况
+- **合作单位**：中国人民公安大学、公安部第三研究所、浙江大学、中国人民大学
+- **备注**：Bo Jin 为通讯作者。
+
+## 📂 资源
+- 论文 PDF：[12_IDE_A_Multi-Agent-Driven_Iterative_Framework_for_Dynamic_Evaluation_of_LLMs.pdf]
+- 代码：N/A
+- 演示/海报：N/A
+- 数据：N/A
+- 视频讲解：N/A
+
+<br>
+
+```yaml
+status: published
+title: "面向垂直联邦学习的隐私威胁与防御综述：基于模型生命周期视角"
+title_en: "A Survey of Privacy Threats and Defense in Vertical Federated Learning: From Model Life Cycle Perspective"
+authors: [Lei Yu*, Meng Han*, Yiming Li, Changting Lin, Yao Zhang, Mingyang Zhang, Yan Liu, Haiqin Weng, Yuseok Jeon, Ka-Ho Chow, Stacy Patterson]
+affiliations: [Rensselaer Polytechnic Institute, Zhejiang University, AntGroup, Ulsan National Institute of Science and Technology, The University of Hong Kong]
+venue: "ACM Computing Surveys (预估)"
+doi: "N/A"
+arxiv: "N/A"
+date: 2024
+keywords: [data privacy, federated learning, vertical federated learning, privacy attacks, feature inference attack, label inference attack, model extraction attack, privacy-preserving techniques]
+tags: [隐私安全, 垂直联邦学习, 综述研究]
+code: "N/A"
+project_page: "N/A"
+```
+---
+# [面向垂直联邦学习的隐私威胁与防御综述：基于模型生命周期视角]
+
+## 📌 一句话总结
+> 我们提出了基于模型生命周期的垂直联邦学习（VFL）隐私安全分类框架，在环境接入、训练、推理等全流程上达到了系统化梳理各类攻击与防御机制的效果，解决了现有研究缺乏针对VFL各阶段细粒度隐私风险指导的问题。
+
+## 🔬 核心贡献
+- 贡献 1：首次从“机器学习模型生命周期”（环境接入、数据预处理、模型训练、部署、推理）的独特视角，全面调研了垂直联邦学习中隐私攻击和防御的最先进技术。
+- 贡献 2：提出了一套详尽的分类法，系统地根据攻击者假设（白盒/黑盒）、应用场景及策略，对VFL中存在的标签推理、特征推理和模型提取攻击进行归类分析。
+- 贡献 3：明确辨析了水平联邦学习（HFL）和VFL在隐私威胁上的核心区别（如直接数据表示的交换频率、不对齐特征关联等），并为未来开放性挑战（如VFL隐私审计、自监督VFL）指明了方向。
+
+## 🧪 关键结果
+- 暂无传统模型的数据集跑分，作为一篇Comprehensive Survey：
+- 归纳分析：系统梳理并归纳了超过百篇文献，揭示了密码学防御（S-1到S-3安全级别）和非密码学防御（差分隐私、对抗训练、数据混淆等）在面对共谋攻击时的效能局限。
+- 关键结论：绝大多数现有的隐私防御研究集中于训练阶段，在模型部署和推理阶段的隐私保护研究严重不足；同时，面向多方参与（Multi-party）及树模型的隐私威胁漏洞亟待进一步探索。
+
+## 🤝 合作情况
+- **合作单位**：伦斯勒理工学院、浙江大学、蚂蚁集团、蔚山科学技术院、香港大学
+- **备注**：Lei Yu 和 Meng Han 为共同第一作者及共同通讯作者。
+
+## 📂 资源
+- 论文 PDF：[13_A Survey of Privacy Threats and Defense in Vertical Federated Learning From Model Life Cycle Perspective.pdf]
+- 代码：N/A
+- 演示/海报：N/A
+- 数据：N/A
+- 视频讲解：N/A
+
+<br>
+
+```yaml
+status: published
+title: "通过增强少样本学习从大语言模型中有效提取个人身份信息"
+title_en: "Effective PII Extraction from LLMs through Augmented Few-Shot Learning"
+authors: [Shuai Cheng, Shu Meng, Haitao Xu*, Haoran Zhang, Shuai Hao, Chuan Yue, Wenrui Ma, Meng Han, Fan Zhang, Zhao Li]
+affiliations: [Zhejiang University, Old Dominion University, Colorado School of Mines, Zhejiang Gongshang University, Hangzhou Yugu Technology]
+venue: "USENIX Security 2025"
+doi: "N/A"
+arxiv: "N/A"
+date: 2025-08-13
+keywords: [LLMs, PII Extraction, Privacy, Few-Shot Learning]
+tags: [大模型隐私, 个人信息提取, 少样本学习]
+code: "https://www.usenix.org/conference/usenixsecurity25/presentation/cheng-shuai"
+project_page: "N/A"
+```
+---
+# [通过增强少样本学习从大语言模型中有效提取个人身份信息]
+
+## 📌 一句话总结
+> 我们提出了一种基于增强少样本学习（Augmented Few-Shot Learning）的方法，在GPT-4o等主流闭源大模型上达到了48.9%的非目标提取成功率，解决了现有方法成功率低、成本高且严重依赖模型微调接口的问题。
+
+## 🔬 核心贡献
+- 贡献 1：针对“非目标PII提取”，提出了一种基于在线学习机制的少样本示例动态选择与替换方法，将非训练集PII逐步替换为模型吐出的真实训练集PII，充分激活模型的记忆能力。
+- 贡献 2：针对“目标PII提取”，提出基于提示链（Prompt Chaining）的查询增强技术，通过引导大模型先生成目标人物的补充描述（如所属机构、邮箱后缀），再进行最终查询，显著提升特定个人数据的提取率。
+- 贡献 3：对提取出的近八千条真实PII数据进行了Web溯源分析，揭示了消费者信息网站（占比22.7%）和商业黄页在模型训练阶段造成的严重隐私泄露风险。
+
+## 🧪 关键结果
+- 数据集A上指标：在非目标提取任务中，针对律师、会计师等四大行业，利用GPT-4o等模型在8000次查询中共提取出3,912条真实PII，攻击成功率达48.9%，单条PII提取成本仅低至0.012美元。
+- 对比SOTA方法：在目标提取任务中，相比于基准方法（如Li et al., PII-compass等），本方法在各类上下文提示组合下，对电子邮件的提取成功率绝对提升了10%到60%。
+- 消融实验关键结论：替换非训练PII为模型内生PII（in-training PII）极其关键。移除该替换策略会导致GPT-4o的提取成功率由65.0%暴跌至24.2%；嵌入特征和命中率质量标签也是驱动在线候选选择的核心因素。
+
+## 🤝 合作情况
+- **合作单位**：浙江大学、老道明大学、科罗拉多矿业学院、浙江工商大学、杭州语谷科技
+- **备注**：Haitao Xu 为通讯作者。
+
+## 📂 资源
+- 论文 PDF：[14_Effective PII Extraction from LLMs through Augmented Few-Shot Learning.pdf]
+- 代码：N/A
+- 演示/海报：N/A
+- 数据：开源验证数据集
+- 视频讲解：N/A
+
+<br>
+
+```yaml
+status: published
+title: "基于节点级对比学习的谣言检测传播结构融合方法"
+title_en: "Propagation Structure Fusion for Rumor Detection Based on Node-Level Contrastive Learning"
+authors: [Jiachen Ma, Yong Liu*, Meng Han*, Chunqiang Hu, Zhaojie Ju]
+affiliations: [Heilongjiang University, Zhejiang University, Chongqing University, University of Portsmouth]
+venue: "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)"
+doi: "10.1109/TNNLS.2023.3319661"
+arxiv: "N/A"
+date: 2023-10-10
+keywords: [Contrastive learning, data augmentation, multiview fusion, propagation structure, rumor detection]
+tags: [谣言检测, 节点对比学习, 传播结构融合]
+code: "N/A"
+project_page: "N/A"
+```
+---
+# [基于节点级对比学习的谣言检测传播结构融合方法]
+
+## 📌 一句话总结
+> 我们提出基于节点级对比学习的传播结构融合模型PFNC，在Twitter和Weibo真实数据集上达到了SOTA的谣言检测准确率，解决了现有图对比学习模型在负采样时会将语义相似的传播事件错误推远从而导致性能下降的问题。
+
+## 🔬 核心贡献
+- 贡献 1：提出了一种全新的节点级对比学习方法（Node-Level Contrastive Learning），通过比较每两个增强传播图中同一节点的表示，防止具有相似传播拓扑特征的真实样本在嵌入空间中被意外排斥。
+- 贡献 2：引入了基于边缘重要性（如节点度数和PageRank）的图数据增强策略，通过随机掩码节点文本，以及依概率扰动（删除、添加、错位）传播边，生成三种多样化且合理的增强视图。
+- 贡献 3：提出一种新颖的CNN多视图融合方法，将事件的传播图视为彩色图像、三种增强结构视为RGB通道、每个节点视为像素，从而有效提取相互补充且一致的全局特征用于最终预测。
+
+## 🧪 关键结果
+- 数据集A上指标：在 Twitter15, Twitter16, Weibo 数据集上，PFNC 的预测准确率分别达到了 0.874, 0.911 和 0.894。
+- 对比SOTA方法：PFNC在所有评测中全面优于传统的事件级对比学习模型（如RDEA, CCFD）及图神经网络（如Bi-GCN, GCAN）。早期检测实验表明，该模型在事件发生后的前20至60分钟内即展现出极其优异的早期判定能力。
+- 消融实验关键结论：如果退化采用事件级对比学习（PFNC-NCL），在Twitter16上的准确率会下降4.9%；若简单进行特征拼接而不采用CNN多通道融合（PFNC-PF），准确率会下降2.4%-3.1%；若忽略边的重要性进行随机扰动，同样会导致检测性能受损。
+
+## 🤝 合作情况
+- **合作单位**：黑龙江大学、浙江大学、重庆大学、朴茨茅斯大学（基于历史文献与论文信息推测的作者从属）
+- **备注**：Yong Liu 与 Meng Han 为共同通讯作者。
+
+## 📂 资源
+- 论文 PDF：[15_Propagation_Structure_Fusion_for_Rumor_Detection_Based_on_Node-Level_Contrastive_Learning.pdf]
+- 代码：N/A
+- 演示/海报：N/A
+- 数据：N/A
+- 视频讲解：N/A
+

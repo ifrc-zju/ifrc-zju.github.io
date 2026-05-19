@@ -1,0 +1,462 @@
+[
+  {
+    "category": "Collaborator",
+    "name": "Dr. Jianfeng Dong",
+    "position": "Research Professor at Zhejiang Gongshang University",
+    "department": "",
+    "email": "dongjf24@gmail.com",
+    "avatar": "coord_dong.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\coord_dong.png",
+    "photo_dest": "people_photos/jianfeng-dong.png"
+  },
+  {
+    "category": "Collaborator",
+    "name": "Dr. Jiahui Yu",
+    "position": "Researher at Binjiang Institute of Zhejiang University",
+    "department": "",
+    "email": "",
+    "avatar": "coord_yu.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\coord_yu.png",
+    "photo_dest": "people_photos/jiahui-yu.png"
+  },
+  {
+    "category": "Collaborator",
+    "name": "Dr. Zhenyu Wen",
+    "position": "Professor at Zhejiang University of Technology",
+    "department": "",
+    "email": "zhenyuwen@zjut.edu.cn",
+    "avatar": "coord_wen.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\coord_wen.png",
+    "photo_dest": "people_photos/zhenyu-wen.png"
+  },
+  {
+    "category": "Collaborator",
+    "name": "Dr. Tong Qiao",
+    "position": "Associate Professor at Hangzhou Dianzi University",
+    "department": "",
+    "email": "tong.qiao@hdu.edu.cn",
+    "avatar": "qiao tong.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\qiao tong.png",
+    "photo_dest": "people_photos/tong-qiao.png"
+  },
+  {
+    "category": "Collaborator",
+    "name": "Dr. Xiaofei Zhou",
+    "position": "Associate Professor at Hangzhou Dianzi University",
+    "department": "",
+    "email": "zxforchid@163.com",
+    "avatar": "xiaofei zhou.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\xiaofei zhou.png",
+    "photo_dest": "people_photos/xiaofei-zhou.png"
+  },
+  {
+    "category": "Collaborator",
+    "name": "Dr. Zhu Liu",
+    "position": "Research Fellow at ZJU-Hangzhou Global Scientific and Technological Innovation Center",
+    "department": "",
+    "email": "liuzhu@zju.edu.cn",
+    "avatar": "Liu.jpg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\Liu.jpg",
+    "photo_dest": "people_photos/zhu-liu.jpg"
+  },
+  {
+    "category": "Faculty",
+    "name": "Dr. Meng Han",
+    "position": "",
+    "department": "",
+    "email": "mhan@zju.edu.cn",
+    "avatar": "韩.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\韩.png",
+    "photo_dest": "people_photos/meng-han.png"
+  },
+  {
+    "category": "Faculty",
+    "name": "Dr. Changting Lin",
+    "position": "Research Fellow",
+    "department": "",
+    "email": "linchangting@gmail.com",
+    "avatar": "林chang.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\林chang.png",
+    "photo_dest": "people_photos/changting-lin.png"
+  },
+  {
+    "category": "Faculty",
+    "name": "Dr. Wenpeng Xing",
+    "position": "Researcher",
+    "department": "",
+    "email": "wpxing@zju.edu.cn",
+    "avatar": "刑.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\刑.jpeg",
+    "photo_dest": "people_photos/wenpeng-xing.jpeg"
+  },
+  {
+    "category": "Faculty",
+    "name": "Dr. Dezhang Kong",
+    "position": "Researcher",
+    "department": "",
+    "email": "kdz@zju.edu.cn",
+    "avatar": "孔德.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\孔德.jpeg",
+    "photo_dest": "people_photos/dezhang-kong.jpeg"
+  },
+  {
+    "category": "Faculty",
+    "name": "Dr. Guangtai Wang",
+    "position": "Researcher",
+    "department": "",
+    "email": "Wanggt2020@outlook.com",
+    "avatar": "wang.jpg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\wang.jpg",
+    "photo_dest": "people_photos/guangtai-wang.jpg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zhenhua Xu",
+    "position": "Research Intern Mentor",
+    "department": "Master's student at Zhejiang University",
+    "email": "xuzhenhua0326@zju.edu.cn",
+    "avatar": "徐振.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\徐振.png",
+    "photo_dest": "people_photos/zhenhua-xu.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zhebo Wang",
+    "position": "Research Intern Mentor",
+    "department": "Master's student at Zhejiang University",
+    "email": "breynald@zju.edu.cn",
+    "avatar": "王哲.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\王哲.jpeg",
+    "photo_dest": "people_photos/zhebo-wang.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Xubin Yue",
+    "position": "Research Intern Mentor",
+    "department": "Master's student at Zhejiang University",
+    "email": "yuexubin@zju.edu.cn",
+    "avatar": "岳shan.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\岳shan.jpeg",
+    "photo_dest": "people_photos/xubin-yue.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Yupeng Qin",
+    "position": "Research Intern Mentor",
+    "department": "Master's degree from Nagoya University",
+    "email": "ypqin@zju-if.com, yupengqin007@nagoya-u.jp, qinyupeng177@gmail.com",
+    "avatar": "秦.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\秦.jpeg",
+    "photo_dest": "people_photos/yupeng-qin.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zixuan Chen",
+    "position": "Research Assistant",
+    "department": "Bachelor's degree from Zhejiang Normal University",
+    "email": "zxchen@zju-if.com",
+    "avatar": "ZixuanChen.jpg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\ZixuanChen.jpg",
+    "photo_dest": "people_photos/zixuan-chen.jpg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Canghai Shi",
+    "position": "Research Intern Mentor",
+    "department": "PhD student at Xidian University",
+    "email": "chshi@zju-if.com",
+    "avatar": "石沧海.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\石沧海.png",
+    "photo_dest": "people_photos/canghai-shi.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Minghao Li",
+    "position": "Research Intern Mentor",
+    "department": "PhD student at Chongqing University",
+    "email": "mhli@stu.cqu.edu.cn",
+    "avatar": "李明.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\李明.jpeg",
+    "photo_dest": "people_photos/minghao-li.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Yufeng Li",
+    "position": "Research Intern Mentor",
+    "department": "PhD Student at East China Normal University",
+    "email": "yufeng03@stu.ecnu.edu.cn",
+    "avatar": "liyufeng.jpg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\liyufeng.jpg",
+    "photo_dest": "people_photos/yufeng-li.jpg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Shi Lin",
+    "position": "Research Intern Mentor",
+    "department": "PhD student at Zhejiang Gongshang University",
+    "email": "linshizjsu@gmail.com, slin@zju-if.com",
+    "avatar": "林石.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\林石.jpeg",
+    "photo_dest": "people_photos/shi-lin.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Jingxuan Zhang",
+    "position": "Research Intern",
+    "department": "Phd Student at Indiana University",
+    "email": "jz97@iu.edu",
+    "avatar": "张景.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\张景.jpeg",
+    "photo_dest": "people_photos/jingxuan-zhang.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Xixiang Zhao",
+    "position": "Research Intern",
+    "department": "Master's student at Hong Kong Polytechnic University",
+    "email": "xixiangzhao77@gmail.com",
+    "avatar": "赵玺.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\赵玺.jpeg",
+    "photo_dest": "people_photos/xixiang-zhao.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Yiran Zhao",
+    "position": "Research Intern",
+    "department": "Independent researcher",
+    "email": "yiranzhao.nlp@gmail.com",
+    "avatar": "赵懿然.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\赵懿然.png",
+    "photo_dest": "people_photos/yiran-zhao.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Shengwei Tian",
+    "position": "Research Intern",
+    "department": "Institute of Systems Medicine, Chinese Academy of Medical Sciences",
+    "email": "tianshengwei5577@gmail.com",
+    "avatar": "田wei.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\田wei.jpeg",
+    "photo_dest": "people_photos/shengwei-tian.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Binhan Xu",
+    "position": "Research Intern",
+    "department": "Master's student at the People's Public Security University of China",
+    "email": "2024211516@stu.ppsuc.edu.cn",
+    "avatar": "徐shan.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\徐shan.jpeg",
+    "photo_dest": "people_photos/binhan-xu.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Wenjun Zeng",
+    "position": "Research Intern",
+    "department": "Master's student at the National University of Singapore",
+    "email": "e1349386@u.nus.edu",
+    "avatar": "曾.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\曾.jpeg",
+    "photo_dest": "people_photos/wenjun-zeng.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Mengting Zhong",
+    "position": "Research Intern",
+    "department": "Undergraduate student at Wenzhou Medical University",
+    "email": "zmt217195@gmail.com",
+    "avatar": "钟.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\钟.jpeg",
+    "photo_dest": "people_photos/mengting-zhong.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Xiaoning Tian",
+    "position": "Research Intern",
+    "department": "Bachelor's student at University of Melbourne",
+    "email": "xiaoningt@student.unimelb.edu.au",
+    "avatar": "田.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\田.jpeg",
+    "photo_dest": "people_photos/xiaoning-tian.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Qichen Liu",
+    "position": "Research Intern",
+    "department": "Master's student at Wake Forest University",
+    "email": "qichen.liu.ooo@gmail.com",
+    "avatar": "刘.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\刘.png",
+    "photo_dest": "people_photos/qichen-liu.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Jin Li",
+    "position": "Research Intern",
+    "department": "Bachelor's student at Hangzhou Dianzi University",
+    "email": "jinli@hdu.edu.cn",
+    "avatar": "李锦.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\李锦.jpeg",
+    "photo_dest": "people_photos/jin-li.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zhonghao Qi",
+    "position": "Research Intern",
+    "department": "Master's student at the Chinese University of Hong Kong",
+    "email": "1155249425@link.cuhk.edu.cn, hkshefcsc@gmail.com",
+    "avatar": "戚.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\戚.jpeg",
+    "photo_dest": "people_photos/zhonghao-qi.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Yilin Li",
+    "position": "Research Intern",
+    "department": "Eötvös Loránd University",
+    "email": "ylli@zju-if.com, liyilin291@gmail.com, liyilin_personal@163.com",
+    "avatar": "李一.jpeg",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\李一.jpeg",
+    "photo_dest": "people_photos/yilin-li.jpeg"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zhi Zhang",
+    "position": "Research Intern",
+    "department": "Master's Degree from University of California, San Diego",
+    "email": "cameronzz20010327@gmail.com",
+    "avatar": "zhi.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\zhi.png",
+    "photo_dest": "people_photos/zhi-zhang.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Chang He",
+    "position": "Research Intern",
+    "department": "Master's degree from the China Academy of Chinese Medical Sciences",
+    "email": "hechang1destined@163.com",
+    "avatar": "何畅.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\何畅.png",
+    "photo_dest": "people_photos/chang-he.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Yuanjie Liu",
+    "position": "Research Intern",
+    "department": "Bachelor's degree from Tianjin University of Commerce",
+    "email": "yuanjieliu65@gmail.com",
+    "avatar": "刘元.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\刘元.png",
+    "photo_dest": "people_photos/yuanjie-liu.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Yiming Bian",
+    "position": "Research Intern",
+    "department": "Master's degree from the University of Birmingham",
+    "email": "yuanjieliu65@gmail.com",
+    "avatar": "卞.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\卞.png",
+    "photo_dest": "people_photos/yiming-bian.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Kechen Lin",
+    "position": "Research Intern",
+    "department": "Master's student at Zhejiang University City College",
+    "email": "kclin@zju-if.com",
+    "avatar": "林可.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\林可.png",
+    "photo_dest": "people_photos/kechen-lin.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zhankai Ge",
+    "position": "Research Intern",
+    "department": "Undergraduate student at Yangzhou University",
+    "email": "zkge@zju-if.com",
+    "avatar": "葛.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\葛.png",
+    "photo_dest": "people_photos/zhankai-ge.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Licong Lu",
+    "position": "Research Intern",
+    "department": "Undergraduate student at Zhejiang Gongshang University",
+    "email": "yclu@zju-if.com",
+    "avatar": "陆.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\陆.png",
+    "photo_dest": "people_photos/licong-lu.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zhong Qi",
+    "position": "Research Intern",
+    "department": "Master's student at Zhejiang Gongshang University",
+    "email": "zxin@zju-if.com",
+    "avatar": "qizhong.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\qizhong.png",
+    "photo_dest": "people_photos/zhong-qi.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Haobo Zhang",
+    "position": "Research Intern",
+    "department": "Bachelor's student at Zhejiang University of Technology",
+    "email": "zhanghaobo@zjut.edu.cn",
+    "avatar": "张皓.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\张皓.png",
+    "photo_dest": "people_photos/haobo-zhang.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zhoucheng Lu",
+    "position": "Research Intern",
+    "department": "Bachelor's degree from communication university of Zhejiang",
+    "email": "zclu@zju-if.com",
+    "avatar": "陆周.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\陆周.png",
+    "photo_dest": "people_photos/zhoucheng-lu.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Zhipeng Chen",
+    "position": "Research Intern",
+    "department": "Bachelor's degree from JiMei University",
+    "email": "zpchen@zju-if.com",
+    "avatar": "陈志.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\陈志.png",
+    "photo_dest": "people_photos/zhipeng-chen.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Yijun Gong",
+    "position": "Research Intern",
+    "department": "Bachelor's degree from South China Normal University",
+    "email": "yjgong@zju-if.com",
+    "avatar": "龚.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\龚.png",
+    "photo_dest": "people_photos/yijun-gong.png"
+  },
+  {
+    "category": "Scholar",
+    "name": "Jingyi Yu",
+    "position": "Research Intern",
+    "department": "Bachelor's graduate from Shanxi Normal University",
+    "email": "jyyu@zju-if.com",
+    "avatar": "jyy.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\jyy.png",
+    "photo_dest": "people_photos/jingyi-yu.png"
+  },
+  {
+    "category": "Alumni",
+    "name": "Lanyi Wei",
+    "position": "Research Intern",
+    "department": "Shanghai University of Finance and Economics",
+    "email": "lywei@zju-if.com",
+    "avatar": "魏兰.png",
+    "photo_src": "d:\\pages\\gentellab\\gentellab.github.io-main\\魏兰.png",
+    "photo_dest": "people_photos/lanyi-wei.png"
+  }
+]

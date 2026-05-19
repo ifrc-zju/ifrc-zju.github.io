@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Honglai Peng",
+    "currentPosition": "Ph.D. Candidate, Georgia Institute of Technology",
+    "dirLabRole": "2019-2021, Master student",
+    "avatar": "honglai-peng.jpeg"
+  },
+  {
+    "name": "Liyuan Liu",
+    "currentPosition": "Assistant Professor, Saint Joseph's University",
+    "dirLabRole": "2017-2021, Ph.D. student",
+    "avatar": "liyuan-liu.jpeg"
+  },
+  {
+    "name": "Yiyun Zhou",
+    "currentPosition": "Senior NLP Scientist, National Board of Medical Examiners",
+    "dirLabRole": "2017-2020, Ph.D. student",
+    "avatar": "yiyun-zhou.jpeg"
+  },
+  {
+    "name": "Qixuan Hou",
+    "currentPosition": "Data Scientist, OMP",
+    "dirLabRole": "2020, Master student",
+    "avatar": "qixuan-hou.jpeg"
+  },
+  {
+    "name": "Duo Pan",
+    "currentPosition": "Software Engineer, Microsoft",
+    "dirLabRole": "2021, Research Collaborator",
+    "avatar": "duo-pan.jpeg"
+  },
+  {
+    "name": "Ming Li",
+    "currentPosition": "Senior Data Engineer, Capital One",
+    "dirLabRole": "2020-2021, Master student",
+    "avatar": "ming-li.jpeg"
+  },
+  {
+    "name": "Yan Wang",
+    "currentPosition": "Data Scientist II, Amazon",
+    "dirLabRole": "2017-2018, Ph.D. student",
+    "avatar": "yan-wang.jpeg"
+  },
+  {
+    "name": "Liquan Bai",
+    "currentPosition": "Scrum Master & Senior Software Engineer, Adtran",
+    "dirLabRole": "2016, Research Collaborator",
+    "avatar": null
+  },
+  {
+    "name": "Chin-Hsien Tsai",
+    "currentPosition": "Master Student, Georgia Institute of Technology",
+    "dirLabRole": "2021, Research Collaborator",
+    "avatar": null
+  }
+]
