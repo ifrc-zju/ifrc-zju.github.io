@@ -80,7 +80,7 @@ window.RESUME = {
       { name: '田晓宁', role: '墨尔本大学本科生', email: 'xiaoningt@student.unimelb.edu.au', link: '', gender: 'female', avatar: 'people_photos/xiaoning-tian.jpeg' },
       { name: '李锦', role: '杭州电子科技大学本科生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: '陆立聪', role: '浙江工商大学本科生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
-      { name: '于静怡', role: '山西师范大学学士', email: 'jyyu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/jingyi-yu.png' },
+      { name: '于苇杭', role: '中央财经大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
     ],
     alumniTitle: '校友',
     alumni: [
@@ -180,7 +180,7 @@ window.RESUME = {
       { name: '田曉寧', role: '墨爾本大學本科生', email: 'xiaoningt@student.unimelb.edu.au', link: '', gender: 'female', avatar: 'people_photos/xiaoning-tian.jpeg' },
       { name: '李錦', role: '杭州電子科技大學本科生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: '陸立聰', role: '浙江工商大學本科生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
-      { name: '于靜怡', role: '山西師範大學學士', email: 'jyyu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/jingyi-yu.png' },
+      { name: '于葦杭', role: '中央財經大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
     ],
     alumniTitle: '校友',
     alumni: [
@@ -316,7 +316,7 @@ window.RESUME = {
       { name: 'Xiaoning Tian', role: 'Undergraduate, University of Melbourne', email: 'xiaoningt@student.unimelb.edu.au', link: '', gender: 'female', avatar: 'people_photos/xiaoning-tian.jpeg' },
       { name: 'Jin Li', role: 'Undergraduate, Hangzhou Dianzi University', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: 'Undergraduate, Zhejiang Gongshang University', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
-      { name: 'Jingyi Yu', role: 'Bachelor\'s degree, Shanxi Normal University', email: 'jyyu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/jingyi-yu.png' },
+      { name: 'Weihang Yu', role: 'Undergraduate, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
     ],
     alumniTitle: 'Alumni',
     alumni: [
@@ -456,7 +456,7 @@ window.RESUME = {
       { name: 'Xiaoning Tian', role: 'メルボルン大学学部生', email: 'xiaoningt@student.unimelb.edu.au', link: '', gender: 'female', avatar: 'people_photos/xiaoning-tian.jpeg' },
       { name: 'Jin Li', role: '杭州電子科技大学学部生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: '浙江工商大学学部生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
-      { name: 'Jingyi Yu', role: '山西师范大学学士', email: 'jyyu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/jingyi-yu.png' },
+      { name: 'Weihang Yu', role: '中央财经大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
     ],
     alumniTitle: '卒業生',
     alumni: [
@@ -572,7 +572,7 @@ window.RESUME = {
       { name: 'Xiaoning Tian', role: '멜버른대학교 학부생', email: 'xiaoningt@student.unimelb.edu.au', link: '', gender: 'female', avatar: 'people_photos/xiaoning-tian.jpeg' },
       { name: 'Jin Li', role: '항주전자과기대학교 학부생', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: '저장공상대학교 학부생', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
-      { name: 'Jingyi Yu', role: '산서사범대학교 학사', email: 'jyyu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/jingyi-yu.png' },
+      { name: 'Weihang Yu', role: '학부생, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
     ],
     alumniTitle: '동문',
     alumni: [
@@ -700,7 +700,7 @@ window.RESUME = {
       { name: 'Xiaoning Tian', role: 'Undergraduate, University of Melbourne', email: 'xiaoningt@student.unimelb.edu.au', link: '', gender: 'female', avatar: 'people_photos/xiaoning-tian.jpeg' },
       { name: 'Jin Li', role: 'Undergraduate, Hangzhou Dianzi University', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: 'Undergraduate, Zhejiang Gongshang University', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
-      { name: 'Jingyi Yu', role: 'Bachelor\'s degree, Shanxi Normal University', email: 'jyyu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/jingyi-yu.png' },
+      { name: 'Weihang Yu', role: 'Undergraduate, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
     ],
     alumniTitle: 'Alumni',
     alumni: [
