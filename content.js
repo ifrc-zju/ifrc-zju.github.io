@@ -61,7 +61,7 @@ window.RESUME = {
     ],
     scholarsTitle: '研究助理',
     scholars: [
-      { name: '方默染', role: '太原理工大学本科生', email: '', link: '', gender: 'female', avatar: 'people_photos/moran-fang.png' },
+      { name: '方墨染', role: '太原理工大学本科生', email: '', link: '', gender: 'female', avatar: 'people_photos/moran-fang.png' },
       { name: '徐振华', role: '杰出学者 · 现于腾讯 · 浙江大学硕士生', email: 'xuzhenhua0326@zju.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenhua-xu.png'},
       { name: '王哲博', role: '浙江大学硕士生', email: 'breynald@zju.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhebo-wang.jpeg'},
       { name: '岳栩彬', role: '浙江大学硕士生', email: 'yuexubin@zju.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/xubin-yue.jpeg'},
@@ -81,6 +81,7 @@ window.RESUME = {
       { name: '李锦', role: '杭州电子科技大学本科生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: '陆立聪', role: '浙江工商大学本科生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: '于苇杭', role: '中央财经大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
+      { name: '魏畇钊', role: '研究助理 · 华东师范大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: '校友',
     alumni: [
@@ -122,7 +123,7 @@ window.RESUME = {
       { name: '龚一骏', role: '华南师范大学本科生', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: '刘琪', role: '哈尔滨工业大学硕士生', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: '李帅文', role: '中国科学院计算技术研究所研究生', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
-      { name: '杨博涵', role: '北师港浸会联合国际学院本科生', email: '', link: '', gender: 'male' }
+      { name: '杨博涵', role: '北师港浸会联合国际学院本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
     ],
     collaboratorsTitle: '合作者',
     collaborators: [
@@ -161,7 +162,7 @@ window.RESUME = {
     ],
     scholarsTitle: '研究助理',
     scholars: [
-      { name: '方默染', role: '太原理工大學本科生', email: '', link: '', gender: 'female', avatar: 'people_photos/moran-fang.png' },
+      { name: '方墨染', role: '太原理工大學本科生', email: '', link: '', gender: 'female', avatar: 'people_photos/moran-fang.png' },
       { name: '徐振華', role: '傑出學者 · 現於騰訊 · 浙江大學碩士生', email: 'xuzhenhua0326@zju.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenhua-xu.png'},
       { name: '王哲博', role: '浙江大學碩士生', email: 'breynald@zju.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhebo-wang.jpeg'},
       { name: '岳栩彬', role: '浙江大學碩士生', email: 'yuexubin@zju.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/xubin-yue.jpeg'},
@@ -181,6 +182,7 @@ window.RESUME = {
       { name: '李錦', role: '杭州電子科技大學本科生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: '陸立聰', role: '浙江工商大學本科生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: '于葦杭', role: '中央財經大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
+      { name: '魏畇钊', role: '研究助理 · 華東師範大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: '校友',
     alumni: [
@@ -222,7 +224,7 @@ window.RESUME = {
       { name: '龔一駿', role: '華南師範大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/yijun-gong.png' },
       { name: '劉琪', role: '哈爾濱工業大學碩士生', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: '李帥文', role: '中國科學院計算技術研究所研究生', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
-      { name: '楊博涵', role: '北師港浸會聯合國際學院本科生', email: '', link: '', gender: 'male' }
+      { name: '楊博涵', role: '北師港浸會聯合國際學院本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
     ],
     collaboratorsTitle: '合作者',
     collaborators: [
@@ -317,6 +319,7 @@ window.RESUME = {
       { name: 'Jin Li', role: 'Undergraduate, Hangzhou Dianzi University', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: 'Undergraduate, Zhejiang Gongshang University', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: 'Undergraduate, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
+      { name: 'Yunzhao Wei', role: 'Research Assistant · Undergraduate, East China Normal University', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: 'Alumni',
     alumni: [
@@ -358,7 +361,7 @@ window.RESUME = {
       { name: 'Yijun Gong', role: 'Undergraduate, South China Normal University', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: 'Qi Liu', role: 'Master\'s student, Harbin Institute of Technology', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: 'Shuaiwen Li', role: 'Graduate student, ICT CAS', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
-      { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male' }
+      { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
     ],
     collaboratorsTitle: 'Collaborators',
     collaborators: [
@@ -457,6 +460,7 @@ window.RESUME = {
       { name: 'Jin Li', role: '杭州電子科技大学学部生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: '浙江工商大学学部生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: '中央财经大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
+      { name: 'Yunzhao Wei', role: '研究アシスタント · 華東師範大学学部生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: '卒業生',
     alumni: [
@@ -498,7 +502,7 @@ window.RESUME = {
       { name: 'Yijun Gong', role: 'Undergraduate, South China Normal University', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: 'Qi Liu', role: 'Master\'s student, Harbin Institute of Technology', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: 'Shuaiwen Li', role: 'Graduate student, ICT CAS', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
-      { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male' }
+      { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
     ],
     collaboratorsTitle: '協力者',
     collaborators: [
@@ -573,6 +577,7 @@ window.RESUME = {
       { name: 'Jin Li', role: '항주전자과기대학교 학부생', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: '저장공상대학교 학부생', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: '학부생, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
+      { name: 'Yunzhao Wei', role: '연구 보조원 · 화동사범대학교 학부생', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: '동문',
     alumni: [
@@ -614,7 +619,7 @@ window.RESUME = {
       { name: 'Yijun Gong', role: '학부생, South China Normal University', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: 'Qi Liu', role: '석사과정, Harbin Institute of Technology', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: 'Shuaiwen Li', role: 'Graduate student, ICT CAS', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
-      { name: 'Bohan Yang', role: '학부생, UIC', email: '', link: '', gender: 'male' }
+      { name: 'Bohan Yang', role: '학부생, UIC', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
     ],
     collaboratorsTitle: '협력자',
     collaborators: [
@@ -701,6 +706,7 @@ window.RESUME = {
       { name: 'Jin Li', role: 'Undergraduate, Hangzhou Dianzi University', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: 'Undergraduate, Zhejiang Gongshang University', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: 'Undergraduate, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
+      { name: 'Yunzhao Wei', role: 'Research Assistant · Undergraduate, East China Normal University', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: 'Alumni',
     alumni: [
@@ -742,7 +748,7 @@ window.RESUME = {
       { name: 'Yijun Gong', role: 'Undergraduate, South China Normal University', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: 'Qi Liu', role: 'Master\'s student, Harbin Institute of Technology', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: 'Shuaiwen Li', role: 'Graduate student, ICT CAS', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
-      { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male' }
+      { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
     ],
     collaboratorsTitle: 'Collaborators',
     collaborators: [
