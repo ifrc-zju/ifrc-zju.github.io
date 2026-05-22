@@ -81,7 +81,7 @@ window.RESUME = {
       { name: '李锦', role: '杭州电子科技大学本科生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: '陆立聪', role: '浙江工商大学本科生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: '于苇杭', role: '中央财经大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
-      { name: '魏畇钊', role: '研究助理 · 华东师范大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
+      { name: '魏畇钊', role: '华东师范大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: '校友',
     alumni: [
@@ -182,7 +182,7 @@ window.RESUME = {
       { name: '李錦', role: '杭州電子科技大學本科生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: '陸立聰', role: '浙江工商大學本科生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: '于葦杭', role: '中央財經大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
-      { name: '魏畇钊', role: '研究助理 · 華東師範大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
+      { name: '魏畇钊', role: '華東師範大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: '校友',
     alumni: [
@@ -319,7 +319,7 @@ window.RESUME = {
       { name: 'Jin Li', role: 'Undergraduate, Hangzhou Dianzi University', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: 'Undergraduate, Zhejiang Gongshang University', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: 'Undergraduate, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
-      { name: 'Yunzhao Wei', role: 'Research Assistant · Undergraduate, East China Normal University', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
+      { name: 'Yunzhao Wei', role: 'Undergraduate, East China Normal University', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: 'Alumni',
     alumni: [
@@ -460,7 +460,7 @@ window.RESUME = {
       { name: 'Jin Li', role: '杭州電子科技大学学部生', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: '浙江工商大学学部生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: '中央财经大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
-      { name: 'Yunzhao Wei', role: '研究アシスタント · 華東師範大学学部生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
+      { name: 'Yunzhao Wei', role: '華東師範大学学部生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: '卒業生',
     alumni: [
@@ -577,7 +577,7 @@ window.RESUME = {
       { name: 'Jin Li', role: '항주전자과기대학교 학부생', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: '저장공상대학교 학부생', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: '학부생, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
-      { name: 'Yunzhao Wei', role: '연구 보조원 · 화동사범대학교 학부생', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
+      { name: 'Yunzhao Wei', role: '화동사범대학교 학부생', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: '동문',
     alumni: [
@@ -706,7 +706,7 @@ window.RESUME = {
       { name: 'Jin Li', role: 'Undergraduate, Hangzhou Dianzi University', email: 'jinli@hdu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/jin-li.jpeg' },
       { name: 'Licong Lu', role: 'Undergraduate, Zhejiang Gongshang University', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: 'Undergraduate, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
-      { name: 'Yunzhao Wei', role: 'Research Assistant · Undergraduate, East China Normal University', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
+      { name: 'Yunzhao Wei', role: 'Undergraduate, East China Normal University', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
     ],
     alumniTitle: 'Alumni',
     alumni: [
