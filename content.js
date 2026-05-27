@@ -464,6 +464,7 @@ window.RESUME = {
       { name: 'Yucong Lu', role: '浙江工商大学学部生', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: '中央财经大学本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
       { name: 'Yunzhao Wei', role: '華東師範大学学部生', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
+      { name: 'Yining Zhang', role: '山东大学学部生', email: '', link: '', gender: 'female', avatar: 'people_photos/yining-zhang.png' },
     ],
     alumniTitle: '卒業生',
     alumni: [
@@ -581,6 +582,7 @@ window.RESUME = {
       { name: 'Yucong Lu', role: '저장공상대학교 학부생', email: 'yclu@zju-if.com', link: '', gender: 'male', avatar: 'people_photos/licong-lu.png' },
       { name: 'Weihang Yu', role: '학부생, Central University of Finance and Economics', email: '', link: '', gender: 'male', avatar: 'people_photos/weihang-yu.png' },
       { name: 'Yunzhao Wei', role: '화동사범대학교 학부생', email: '', link: '', gender: 'male', avatar: 'people_photos/yunzhao-wei.png' },
+      { name: 'Yining Zhang', role: '산둥대학 학부생', email: '', link: '', gender: 'female', avatar: 'people_photos/yining-zhang.png' },
     ],
     alumniTitle: '동문',
     alumni: [
