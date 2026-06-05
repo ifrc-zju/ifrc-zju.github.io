@@ -121,7 +121,6 @@ window.RESUME = {
       { name: '张逸伦', role: '普渡大学硕士生', email: '', link: '', gender: 'male', avatar: 'people_photos/yilun-zhang.png' },
       { name: '张皓博', role: '浙江工业大学本科生', email: '', link: '', gender: 'male' , avatar: 'people_photos/haobo-zhang.png'},
       { name: '王威涵', role: '爱丁堡大学硕士生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihan-wang.png' },
-      { name: '龚一骏', role: '华南师范大学本科生', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: '刘琪', role: '哈尔滨工业大学硕士生', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: '李帅文', role: '中国科学院计算技术研究所研究生', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
       { name: '杨博涵', role: '北师港浸会联合国际学院本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
@@ -223,7 +222,6 @@ window.RESUME = {
       { name: '張逸倫', role: '普渡大學碩士生', email: '', link: '', gender: 'male', avatar: 'people_photos/yilun-zhang.png' },
       { name: '張皓博', role: '浙江工業大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/haobo-zhang.png' },
       { name: '王威涵', role: '愛丁堡大學碩士生', email: '', link: '', gender: 'male', avatar: 'people_photos/weihan-wang.png' },
-      { name: '龔一駿', role: '華南師範大學本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/yijun-gong.png' },
       { name: '劉琪', role: '哈爾濱工業大學碩士生', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: '李帥文', role: '中國科學院計算技術研究所研究生', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
       { name: '楊博涵', role: '北師港浸會聯合國際學院本科生', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
@@ -361,7 +359,6 @@ window.RESUME = {
       { name: 'Yilun Zhang', role: 'Master\'s student, Purdue University', email: '', link: '', gender: 'male', avatar: 'people_photos/yilun-zhang.png' },
       { name: 'Haobo Zhang', role: 'Undergraduate, Zhejiang University of Technology', email: '', link: '', gender: 'male' , avatar: 'people_photos/haobo-zhang.png'},
       { name: 'Weihan Wang', role: 'Master\'s student, University of Edinburgh', email: '', link: '', gender: 'male', avatar: 'people_photos/weihan-wang.png' },
-      { name: 'Yijun Gong', role: 'Undergraduate, South China Normal University', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: 'Qi Liu', role: 'Master\'s student, Harbin Institute of Technology', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: 'Shuaiwen Li', role: 'Graduate student, ICT CAS', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
       { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
@@ -503,7 +500,6 @@ window.RESUME = {
       { name: 'Yilun Zhang', role: 'Master\'s student, Purdue University', email: '', link: '', gender: 'male', avatar: 'people_photos/yilun-zhang.png' },
       { name: 'Haobo Zhang', role: 'Undergraduate, Zhejiang University of Technology', email: '', link: '', gender: 'male' , avatar: 'people_photos/haobo-zhang.png'},
       { name: 'Weihan Wang', role: 'Master\'s student, University of Edinburgh', email: '', link: '', gender: 'male', avatar: 'people_photos/weihan-wang.png' },
-      { name: 'Yijun Gong', role: 'Undergraduate, South China Normal University', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: 'Qi Liu', role: 'Master\'s student, Harbin Institute of Technology', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: 'Shuaiwen Li', role: 'Graduate student, ICT CAS', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
       { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
@@ -621,7 +617,6 @@ window.RESUME = {
       { name: 'Yilun Zhang', role: '석사과정, Purdue University', email: '', link: '', gender: 'male', avatar: 'people_photos/yilun-zhang.png' },
       { name: 'Haobo Zhang', role: '학부생, Zhejiang University of Technology', email: '', link: '', gender: 'male' , avatar: 'people_photos/haobo-zhang.png'},
       { name: 'Weihan Wang', role: '석사과정, University of Edinburgh', email: '', link: '', gender: 'male', avatar: 'people_photos/weihan-wang.png' },
-      { name: 'Yijun Gong', role: '학부생, South China Normal University', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: 'Qi Liu', role: '석사과정, Harbin Institute of Technology', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: 'Shuaiwen Li', role: 'Graduate student, ICT CAS', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
       { name: 'Bohan Yang', role: '학부생, UIC', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
@@ -751,7 +746,6 @@ window.RESUME = {
       { name: 'Yilun Zhang', role: 'Master\'s student, Purdue University', email: '', link: '', gender: 'male', avatar: 'people_photos/yilun-zhang.png' },
       { name: 'Haobo Zhang', role: 'Undergraduate, Zhejiang University of Technology', email: '', link: '', gender: 'male' , avatar: 'people_photos/haobo-zhang.png'},
       { name: 'Weihan Wang', role: 'Master\'s student, University of Edinburgh', email: '', link: '', gender: 'male', avatar: 'people_photos/weihan-wang.png' },
-      { name: 'Yijun Gong', role: 'Undergraduate, South China Normal University', email: '', link: '', gender: 'male' , avatar: 'people_photos/yijun-gong.png'},
       { name: 'Qi Liu', role: 'Master\'s student, Harbin Institute of Technology', email: '', link: '', gender: 'female', avatar: 'people_photos/qi-liu.png' },
       { name: 'Shuaiwen Li', role: 'Graduate student, ICT CAS', email: '', link: '', gender: 'male', avatar: 'people_photos/shuaiwen-li.png' },
       { name: 'Bohan Yang', role: 'Undergraduate, UIC', email: '', link: '', gender: 'male', avatar: 'people_photos/bohan-yang.png' }
