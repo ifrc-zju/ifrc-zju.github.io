@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Intelligence Fusion Research Center</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260611s">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -73,10 +73,9 @@
     <section id="research" class="section section-research-topology">
       <div class="container">
         <h2 id="research-title"></h2>
-        <p class="research-topology-intro" id="research-topology-intro"></p>
       </div>
       <div class="research-topology-frame-outer">
-        <iframe id="research-topology-iframe" class="research-topology-iframe" src="agent-trust-governance.html?embed=1&lang=zh" title="" loading="lazy" scrolling="no"></iframe>
+        <iframe id="research-topology-iframe" class="research-topology-iframe" src="agent-trust-governance.html?embed=1&amp;lang=zh&amp;v=20260611t" title="" loading="lazy" scrolling="no"></iframe>
       </div>
     </section>
 
@@ -96,19 +95,27 @@
       </div>
     </section>
 
-    <section id="publications" class="section">
+    <section id="publications" class="section section-papers-rich">
       <div class="container">
         <h2 id="pub-title"></h2>
-        <h3 class="subsec" id="pub-journal-label"></h3>
-        <ol class="papers-list" id="papers-journal"></ol>
-        <h3 class="subsec" id="pub-conf-label"></h3>
-        <ol class="papers-list" id="papers-conf"></ol>
-        <h3 class="subsec" id="pub-preprint-label"></h3>
-        <ol class="papers-list" id="papers-preprints"></ol>
+        <div class="papers-layout">
+          <section class="paper-panel">
+            <h3 class="paper-panel-title" id="pub-journal-label"></h3>
+            <div class="papers-grid" id="papers-journal"></div>
+          </section>
+          <section class="paper-panel">
+            <h3 class="paper-panel-title" id="pub-conf-label"></h3>
+            <div class="papers-grid" id="papers-conf"></div>
+          </section>
+          <section class="paper-panel">
+            <h3 class="paper-panel-title" id="pub-preprint-label"></h3>
+            <div class="papers-grid" id="papers-preprints"></div>
+          </section>
+        </div>
       </div>
     </section>
 
-    <section id="patents" class="section">
+    <section id="patents" class="section section-patents-rich">
       <div class="container">
         <h2 id="patents-title"></h2>
         <div id="patents-content"></div>
@@ -163,9 +170,10 @@
     </div>
   </footer>
 
-  <script src="content.js?v=20260528"></script>
-  <script src="papers.js?v=20260527"></script>
-  <script src="script.js?v=20260527"></script>
+  <script src="content.js?v=20260611p"></script>
+  <script src="papers.js?v=20260611r"></script>
+  <script src="patents-data.js?v=20260611b"></script>
+  <script src="script.js?v=20260611s"></script>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>

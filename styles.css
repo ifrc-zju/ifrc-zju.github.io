@@ -553,12 +553,13 @@ img {
 /* 研究方向嵌入图谱：不打断 body 渐变，与 iframe 内背景同一套色 */
 .section.section-research-topology {
   background: transparent;
-  padding-bottom: 0.25rem;
+  padding-bottom: 2rem;
 }
 
-/* 研究成果展示图与团队成员：收紧相邻节间距 */
+/* 研究方向图谱与团队成员：保留适度呼吸间距 */
 .section.section-research-topology + #people.section {
-  padding-top: 0.5rem;
+  padding-top: 2.25rem;
+  margin-top: 0;
 }
 
 #people #people-title {
@@ -1547,7 +1548,7 @@ img {
   color: var(--color-accent);
 }
 
-/* ===== Papers ===== */
+/* ===== Papers（与专利列表同风格）===== */
 .subsec {
   font-size: 1.15rem;
   font-weight: 600;
@@ -1555,20 +1556,97 @@ img {
   color: var(--color-text);
 }
 
-.papers-list {
-  margin: 0 0 1rem;
-  padding-left: 1.5rem;
+.section-papers-rich #pub-title {
+  font-size: 2.35rem;
+  margin-bottom: 1.25rem;
 }
 
-.papers-list .paper-item {
-  margin-bottom: 0.65rem;
-  font-size: 0.9rem;
+.papers-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.paper-panel {
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.paper-panel-title {
+  margin: 0 0 0.75rem;
+  padding: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+  border: none;
+}
+
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 2rem;
+}
+
+.paper-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.5rem;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.paper-card-title {
+  flex: 1 1 12rem;
+  min-width: 0;
+  font-size: 0.92rem;
   line-height: 1.55;
+  font-weight: 400;
   color: var(--color-text-muted);
 }
 
-.papers-list .paper-item a {
+.paper-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.paper-card-title a:hover {
   color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.paper-card-badge {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.paper-badge-ccf-a {
+  color: #5dffcb;
+}
+
+.paper-badge-ccf-b {
+  color: #7eb8ff;
+}
+
+.paper-badge-ccf-c {
+  color: #ffb86a;
+}
+
+.paper-badge-if,
+.paper-badge-high-if {
+  color: #ffc857;
+}
+
+.paper-badge-if-composite {
+  color: #e8b86a;
 }
 
 /* ===== Research: embedded topology diagram ===== */
@@ -1576,14 +1654,7 @@ img {
 
 .section-research-topology #research-title {
   font-size: 2.35rem;
-  margin-bottom: 1.25rem;
-}
-
-.research-topology-intro {
-  margin: 0 0 1.5rem;
-  font-size: 1.18rem;
-  line-height: 1.72;
-  color: var(--color-text-muted);
+  margin-bottom: 0.65rem;
 }
 
 .research-topology-frame-outer {
@@ -1592,23 +1663,24 @@ img {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 1.25rem;
   background: transparent;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .research-topology-iframe {
   display: block;
   width: 100%;
-  /* 高度由子页 postMessage 自适应；画布加高后占位同步加大 */
-  height: 2280px;
-  min-height: 1120px;
+  /* 初始高度偏大，子页 postMessage 会收敛；避免首屏底部被裁切 */
+  height: 2600px;
+  min-height: 1200px;
   border: 0;
   vertical-align: top;
   background: transparent;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -1616,13 +1688,9 @@ img {
     font-size: 1.72rem;
   }
 
-  .research-topology-intro {
-    font-size: 1.02rem;
-  }
-
   .research-topology-iframe {
-    min-height: 960px;
-    height: 1980px;
+    min-height: 900px;
+    height: 2200px;
   }
 }
 
@@ -2202,29 +2270,110 @@ img {
   background: var(--color-cyan);
 }
 
-/* ===== 发明专利完整列表 ===== */
-.patent-category {
-  margin-bottom: 2rem;
+/* ===== 专利列表（双列简洁排布）===== */
+.section-patents-rich #patents-title {
+  font-size: 2.35rem;
+  margin-bottom: 1.25rem;
 }
 
-.patent-category .subsec {
-  margin-top: 0;
+.patents-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
-.patents-list {
-  margin: 0 0 0.5rem;
-  padding-left: 1.5rem;
+.patent-panel {
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
-.patent-item {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+.patent-panel-title {
+  margin: 0 0 0.75rem;
+  padding: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+  border: none;
+}
+
+.patents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 2rem;
+}
+
+.patent-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.5rem;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.patent-card-status {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.patent-granted .patent-card-status {
+  color: #5dffcb;
+}
+
+.patent-pending .patent-card-status {
+  color: #7eb8ff;
+}
+
+.patent-card-title {
+  flex: 1 1 12rem;
+  min-width: 0;
+  font-size: 0.92rem;
   line-height: 1.55;
+  font-weight: 400;
   color: var(--color-text-muted);
 }
 
-.patent-item strong {
-  color: var(--color-text);
+.patents-load-error {
+  margin: 0;
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+}
+
+.patents-load-error code {
+  color: var(--color-accent);
+  font-size: 0.88em;
+}
+
+@media (max-width: 768px) {
+  .section-papers-rich #pub-title {
+    font-size: 1.72rem;
+  }
+
+  .papers-grid {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .section-patents-rich #patents-title {
+    font-size: 1.72rem;
+  }
+
+  .patents-grid {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
 }
 
 /* ===== Research ===== */
@@ -2579,11 +2728,12 @@ img {
   }
 
   .section.section-research-topology {
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.5rem;
   }
 
   .section.section-research-topology + #people.section {
-    padding-top: 0.35rem;
+    padding-top: 1.75rem;
+    margin-top: 0;
   }
 
   .container {
@@ -2636,16 +2786,6 @@ img {
   .join-contact {
     padding: 0.85rem;
     font-size: 0.9rem;
-  }
-
-  /* 论文列表 */
-  .papers-list {
-    padding-left: 1.25rem;
-  }
-
-  .paper-item {
-    font-size: 0.9rem;
-    margin-bottom: 0.75rem;
   }
 
   /* Footer */

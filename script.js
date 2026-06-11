@@ -100,8 +100,6 @@
     if (aboutContent && dAbout.aboutContent) aboutContent.innerHTML = dAbout.aboutContent;
     var researchTitle = document.getElementById('research-title');
     if (researchTitle && d.researchTitle) researchTitle.textContent = d.researchTitle;
-    var researchIntro = document.getElementById('research-topology-intro');
-    if (researchIntro && d.researchTopologyIntro) researchIntro.textContent = d.researchTopologyIntro;
     var researchIframe = document.getElementById('research-topology-iframe');
     if (researchIframe && d.researchTopologyIframeTitle) researchIframe.setAttribute('title', d.researchTopologyIframeTitle);
     var peopleTitle = document.getElementById('people-title');
@@ -190,9 +188,15 @@
     renderCollaborators(d.collaborators || []);
     if (d.news) renderNews(d.news);
 
-    var pf = window.PATENTS_FULL && (window.PATENTS_FULL[lang] || window.PATENTS_FULL.en);
-    if (pf) renderPatentsFull(pf);
-    
+    try {
+      renderPatentsSection(lang);
+    } catch (e) {
+      console.error('Patents section render failed:', e);
+      showPatentsLoadError();
+    }
+
+    if (window.PAPERS) renderPapers(lang);
+
     // Render gallery with current language
     renderGallery();
   }
@@ -428,42 +432,184 @@
   }
 
 
+  function escHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function parsePatentItem(item) {
+    var str = String(item).trim();
+    var m = str.match(/^(.+?)\s*\[(已授权|受理中|Granted|Pending)\]\s*$/i);
+    if (!m) return { title: str, status: null, statusKey: 'unknown' };
+    var raw = m[2];
+    var granted = /已授权|Granted/i.test(raw);
+    var statusKey = granted ? 'granted' : 'pending';
+    var status = granted
+      ? (/Granted/i.test(raw) ? 'Granted' : '已授权')
+      : (/Pending/i.test(raw) ? 'Pending' : '受理中');
+    return { title: m[1].trim(), status: status, statusKey: statusKey };
+  }
+
+  function renderPatentCard(item) {
+    var p = parsePatentItem(item);
+    var cls = 'patent-card patent-' + p.statusKey;
+    var html = '<article class="' + cls + '">';
+    if (p.status) html += '<span class="patent-card-status">' + escHtml(p.status) + '</span>';
+    html += '<span class="patent-card-title">' + escHtml(p.title) + '</span></article>';
+    return html;
+  }
+
+  function showPatentsLoadError() {
+    var el = document.getElementById('patents-content');
+    if (!el) return;
+    el.innerHTML = '<p class="patents-load-error">专利列表暂时无法加载，请刷新页面或确认 <code>patents-data.js</code> 已正确部署。</p>';
+  }
+
+  function renderPatentsSection(lang) {
+    var pf = window.PATENTS_FULL && (window.PATENTS_FULL[lang] || window.PATENTS_FULL.en);
+    if (!pf || !pf.categories || !pf.categories.length) {
+      showPatentsLoadError();
+      return;
+    }
+    renderPatentsFull(pf);
+  }
+
   function renderPatentsFull(data) {
     var el = document.getElementById('patents-content');
     if (!data || !el) return;
-    var html = '';
+    if (!data.categories || !data.categories.length) {
+      showPatentsLoadError();
+      return;
+    }
+    var html = '<div class="patents-layout">';
     data.categories.forEach(function (cat) {
-      html += '<div class="patent-category"><h3 class="subsec">' + cat.title + '</h3><ol class="patents-list">';
-      cat.items.forEach(function (item) { html += '<li class="patent-item">' + item + '</li>'; });
-      html += '</ol></div>';
+      if (!cat || !cat.items || !cat.items.length) return;
+      html += '<section class="patent-panel"><h3 class="patent-panel-title">' + escHtml(cat.title || '') + '</h3>';
+      html += '<div class="patents-grid">';
+      cat.items.forEach(function (item) {
+        html += renderPatentCard(item);
+      });
+      html += '</div></section>';
     });
+    html += '</div>';
+    if (html.indexOf('patent-card') === -1) {
+      showPatentsLoadError();
+      return;
+    }
     el.innerHTML = html;
   }
 
-  function renderPapers() {
+  /* JCR 2024（2025 发布）；与 papers.js 中 journal[].if 同步，作兜底匹配 */
+  var JOURNAL_IF_RULES = [
+    { re: /ACM Computing Surveys/i, if: 23.8 },
+    { re: /Information Fusion/i, if: 14.8 },
+    { re: /IEEE Transactions on Image Processing/i, if: 13.7 },
+    { re: /IEEE Transactions on Industrial Informatics/i, if: 9.9 },
+    { re: /IEEE Transactions on Neural Networks and Learning Systems/i, if: 8.9 },
+    { re: /IEEE Internet of Things Journal/i, if: 8.9 },
+    { re: /IEEE Transactions on Intelligent Transportation Systems/i, if: 8.4 },
+    { re: /Machine Intelligence Research|\bMIR\b/i, if: 8.7 },
+    { re: /IEEE TIFS|Transactions on Information Forensics and Security/i, if: 8.0 },
+    { re: /IEEE Transactions on Dependable and Secure Computing/i, if: 7.5 },
+    { re: /Digital Communications and Networks/i, if: 7.5 },
+    { re: /SCIENTIA SINICA Informationis|SCIENCE CHINA Information Sciences/i, if: 7.6 },
+    { re: /IEEE Transactions on Emerging Topics in Computational Intelligence/i, if: 6.5 },
+    { re: /Blockchain:\s*Research and Applications/i, if: 5.6 },
+    { re: /Complex\s*&\s*Intelligent Systems/i, if: 4.6 },
+    { re: /Computer Networks/i, if: 4.6 },
+    { re: /Journal of Information Security|信息安全学报/i, if: 1.89, ifNote: 'composite' }
+  ];
+
+  function formatIFLabel(ifVal, ifNote, lang) {
+    var n = Number(ifVal);
+    if (!isFinite(n)) return '';
+    var s = (Math.round(n * 100) / 100).toString();
+    if (s.indexOf('.') !== -1) s = s.replace(/\.?0+$/, '');
+    if (ifNote === 'composite') {
+      return (lang === 'en') ? ('IF ' + s + ' (composite)') : ('IF ' + s + '（综合）');
+    }
+    return 'IF ' + s;
+  }
+
+  function resolveJournalIF(item, text) {
+    if (item && item.if != null && isFinite(Number(item.if))) {
+      return { value: Number(item.if), note: item.ifNote || null };
+    }
+    for (var i = 0; i < JOURNAL_IF_RULES.length; i++) {
+      var rule = JOURNAL_IF_RULES[i];
+      if (rule.re.test(text)) {
+        return { value: rule.if, note: rule.ifNote || null };
+      }
+    }
+    return null;
+  }
+
+  function parsePaperCite(item, section, lang) {
+    var cite = (item && item.cite) ? item.cite : String(item);
+    var html = String(cite);
+    var badges = [];
+    var text = html;
+
+    var ccf = text.match(/\bCCF-([ABC])\b/i);
+    if (ccf) {
+      var tier = ccf[1].toUpperCase();
+      badges.push({ label: 'CCF-' + tier, key: 'ccf-' + tier.toLowerCase() });
+      text = text.replace(/\s*\.?\s*CCF-[ABC]\s*\.?\s*/gi, ' ');
+    }
+
+    text = text.replace(/\s*\.?\s*IF[:\s]+[\d.]+\s*\.?\s*/gi, ' ');
+    text = text.replace(/\s*\.?\s*高IF\s*\.?\s*/g, ' ');
+
+    if (section === 'journal') {
+      var ifMeta = resolveJournalIF(typeof item === 'object' ? item : null, text);
+      if (ifMeta) {
+        badges.push({
+          label: formatIFLabel(ifMeta.value, ifMeta.note, lang),
+          key: ifMeta.note === 'composite' ? 'if-composite' : 'if'
+        });
+      }
+    }
+
+    text = text.replace(/\s{2,}/g, ' ').replace(/\s+\./g, '.').replace(/\.\s*\./g, '.').trim();
+    return { bodyHtml: text, badges: badges };
+  }
+
+  function renderPaperCard(item, sectionKey, lang) {
+    var parsed = parsePaperCite(item, sectionKey, lang);
+    var html = '<article class="paper-card">';
+    parsed.badges.forEach(function (b) {
+      html += '<span class="paper-card-badge paper-badge-' + b.key + '">' + escHtml(b.label) + '</span>';
+    });
+    html += '<span class="paper-card-title">' + parsed.bodyHtml + '</span></article>';
+    return html;
+  }
+
+  function renderPapers(lang) {
     var P = window.PAPERS;
     if (!P) return;
+    lang = lang || currentLang;
     var keyToId = { journal: 'papers-journal', conference: 'papers-conf', preprints: 'papers-preprints' };
-    
-    // 辅助函数：从论文引用中提取年份
+
     function getYear(cite) {
       var match = cite.match(/\b(20\d{2})\b/);
-      return match ? parseInt(match[1]) : 0;
+      return match ? parseInt(match[1], 10) : 0;
     }
-    
-    // 辅助函数：对论文列表按年份倒序排序
+
     function sortPapersByYear(papers) {
-      return papers.sort(function(a, b) {
+      return papers.slice().sort(function (a, b) {
         return getYear(b.cite) - getYear(a.cite);
       });
     }
-    
+
     ['journal', 'conference', 'preprints'].forEach(function (key) {
       var el = document.getElementById(keyToId[key]);
       if (!el || !P[key]) return;
       var sortedPapers = sortPapersByYear(P[key]);
       el.innerHTML = sortedPapers.map(function (item) {
-        return '<li class="paper-item">' + item.cite + '</li>';
+        return renderPaperCard(item, key, lang);
       }).join('');
     });
   }
@@ -490,8 +636,22 @@
       var iframe = document.getElementById('research-topology-iframe');
       if (!iframe) return;
       var h = parseInt(data.height, 10);
-      if (h >= 400 && h <= 24000) iframe.style.height = h + 'px';
+      if (h >= 400 && h <= 24000) {
+        var nextH = h + 56;
+        var curH = parseInt(iframe.style.height, 10) || 0;
+        iframe.style.height = Math.max(nextH, curH) + 'px';
+      }
     });
+
+    var topologyIframe = document.getElementById('research-topology-iframe');
+    if (topologyIframe) {
+      topologyIframe.addEventListener('load', function () {
+        /* 子页布局完成后会再次 postMessage；load 时先请求一次同步 */
+        try {
+          topologyIframe.contentWindow.postMessage({ type: 'ifrc-topology-request-height' }, '*');
+        } catch (e) { /* ignore */ }
+      });
+    }
 
     var toggle = document.querySelector('.nav-toggle');
     var nav = document.querySelector('.main-nav');

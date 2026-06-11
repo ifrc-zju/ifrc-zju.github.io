@@ -1,27 +1,28 @@
 /* 论文与专利数据 - 中英共用（引用以英文为主） */
 window.PAPERS = {
+  /* 期刊 if：JCR 2024（2025 年发布）；信息安全学报为中文综合影响因子 */
   journal: [
-    { cite: 'Z. Xu, M. Han, X. Yue, W. Xing. <a href="https://www.sciengine.com/SSI/articleIndex?doi=10.1360/SSI-2025-0022" target="_blank" rel="noopener">InSty: A Robust Multi-Level Cross-Granularity Fingerprint Embedding Algorithm for Multi-Turn Dialogue in Large Language Models</a>. SCIENTIA SINICA Informationis. CCF-A.' },
-    { cite: 'W. Xing, M. Li, M. Li, M. Han. <a href="https://dl.acm.org/doi/10.1145/3806048" target="_blank" rel="noopener">Towards robust and secure embodied AI: A survey on vulnerabilities and attacks</a>. ACM Computing Surveys, 2025.' },
-    { cite: 'M. Liu, Y. Liu, Q. Ren, M. Han. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525002003" target="_blank" rel="noopener">Rethinking multi-level information fusion in temporal graphs: Pre-training then distilling for better embedding</a>. Information Fusion, 2025.' },
-    { cite: 'Y. Zhang, Q. Ren, Y. Chen, M. Han. <a href="https://link.springer.com/article/10.1007/s40747-025-02039-9" target="_blank" rel="noopener">Beyond contrastive learning: adaptive graph representations with mutual information maximization for blockchain and structured data</a>. Complex & Intelligent Systems, 2025.' },
-    { cite: 'Z. Wang, Y. Chen, Y. Yao, M. Han, W. Xing, M. Li. <a href="https://ieeexplore.ieee.org/abstract/document/11098842" target="_blank" rel="noopener">IDCNet: Image Decomposition and Cross-view Distillation for Generalizable Deepfake Detection</a>. IEEE TIFS. CCF-A.' },
-    { cite: 'J. Yu, W. Fan, Y. Guo, H. Lyu, H. Gao, C. Lin, M. Han, X. Cheng. <a href="https://ieeexplore.ieee.org/abstract/document/11118317/" target="_blank" rel="noopener">GenBEV: Generative Model With Semantic Compensation for Bird\'s Eye View Segmentation</a>. IEEE Transactions on Intelligent Transportation Systems, 2024.' },
-    { cite: 'T. Qiao, B. Zhao, R. Shi, M. Han, M. Hassaballah, F. Retraint, X. Luo. <a href="https://ieeexplore.ieee.org/abstract/document/10680120" target="_blank" rel="noopener">Scalable universal adversarial watermark defending against facial forgery</a>. IEEE Transactions on Information Forensics and Security, 2024.' },
-    { cite: 'Y. Zhuang, Y. Chen, X. Zhang, T. Ren, M. Han, M. Alam, Z. Hong. <a href="https://ieeexplore.ieee.org/abstract/document/10636342" target="_blank" rel="noopener">A Large-Scale Node Lightweight Consensus Algorithm of Blockchain for Internet of Things</a>. IEEE Internet of Things Journal, 2024.' },
-    { cite: 'Z. Hong, M. Chen, R. Wang, M. Yan, D. Zheng, C. Lin, J. Su, M. Han. <a href="https://ieeexplore.ieee.org/abstract/document/10526449" target="_blank" rel="noopener">Active Learning-Based Backtracking Attack Against Source Location Privacy of Cyber-Physical System</a>. IEEE Transactions on Emerging Topics in Computational Intelligence, 2024.' },
-    { cite: 'Z. Liu, C. Hu, C. Ruan, P. Hu, M. Han, J. Yu. <a href="https://ieeexplore.ieee.org/abstract/document/10478494" target="_blank" rel="noopener">An enhanced authentication and key agreement protocol for smart grid communication</a>. IEEE Internet of Things Journal, 2024.' },
-    { cite: 'Y. Chen, Y. Zhang, Y. Zhuang, K. Miao, S. Pouriyeh, M. Han. <a href="https://ieeexplore.ieee.org/abstract/document/10381487" target="_blank" rel="noopener">Efficient and secure blockchain consensus algorithm for heterogeneous industrial Internet of Things nodes based on double-DAG</a>. IEEE Transactions on Industrial Informatics, 2024.' },
-    { cite: 'Y. Wang, S. Wang, H. Luo, J. Dong, F. Wang, M. Han, X. Wang, M. Wang. <a href="https://ieeexplore.ieee.org/abstract/document/10440048" target="_blank" rel="noopener">Dual-view Curricular Optimal Transport for Cross-lingual Cross-modal Retrieval</a>. IEEE Transactions on Image Processing, 2024.' },
-    { cite: 'Y. Chen, H. Chen, Z. Xiong, B. Liu, Z. Wang, M. Han. <a href="https://www.sciencedirect.com/science/article/pii/S2352864822002553" target="_blank" rel="noopener">Game theory attack pricing for mining pools in blockchain-based IoT</a>. Digital Communications and Networks, 2024.' },
-    { cite: 'L. Liu, Z. Ma, Y. Zhou, M. Fan, M. Han. <a href="https://www.sciencedirect.com/science/article/pii/S2666721823001425" target="_blank" rel="noopener">Trust in ESG reporting: The intelligent veri-green solution for incentivized verification</a>. Blockchain: Research and Applications, 2024.' },
-    { cite: 'B. Zhao, S. Ji, J. Xu, Y. Tian, Q. Wei, Q. Wang. <a href="https://arxiv.org/pdf/2212.13716" target="_blank" rel="noopener">One Bad Apple Spoils the Barrel: Understanding the Security Risks Introduced by Third-Party Components in IoT Firmware</a>. IEEE Transactions on Dependable and Secure Computing, 2023.' },
-    { cite: 'L. Lu, Z. Wen, Y. Yuan, B. Dai, P. Qian, C. Lin, Q. He, Z. Liu, J. Chen, R. Ranjan. <a href="https://ieeexplore.ieee.org/abstract/document/9983476/" target="_blank" rel="noopener">A Trustworthy and Scalable Blockchain Analytics Platform</a>. IEEE Transactions on Dependable and Secure Computing, 2023.' },
-    { cite: 'Z. Wang, J. Huang, K. Miao, X. Lv, Y. Chen, B. Su, L. Liu, M. Han. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1389128623004668" target="_blank" rel="noopener">Lightweight zero-knowledge authentication scheme for IoT embedded devices</a>. Computer Networks, 2023.' },
-    { cite: 'J. Ma, Y. Liu, M. Han, C. Hu, Z. Ju. <a href="https://ieeexplore.ieee.org/abstract/document/10275075" target="_blank" rel="noopener">Propagation structure fusion for rumor detection based on node-level contrastive learning</a>. IEEE Transactions on Neural Networks and Learning Systems, 2023.' },
-    { cite: 'C. Hu, Z. Liu, R. Li, P. Hu, T. Xiang, M. Han. <a href="https://ieeexplore.ieee.org/abstract/document/10198760" target="_blank" rel="noopener">Smart contract assisted privacy-preserving data aggregation and management scheme for smart grid</a>. IEEE Transactions on Dependable and Secure Computing, 2023.' },
-    { cite: 'M. Han, Y. Weiping, Z. Yiyun, D. Wentao, S. Yanbin, L. Changting. <a href="https://jcs.iie.ac.cn/xxaqxb/ch/reader/view_abstract.aspx?file_no=20230302&flag=1" target="_blank" rel="noopener">Adversarial sample detection based on feature distribution differences</a>. Journal of Information Security, 2023.' },
-    { cite: 'W. Xing, J. Chen, Y. Guo, <a href="https://link.springer.com/article/10.1007/s11633-022-1381-9" target="_blank" rel="noopener">Robust Local Light Field Synthesis via Occlusion-aware Sampling and Deep Visual Feature Fusion</a>, Machine Intelligence Research (MIR) 20, 408–420 (2023).' }
+    { cite: 'Z. Xu, M. Han, X. Yue, W. Xing. <a href="https://www.sciengine.com/SSI/articleIndex?doi=10.1360/SSI-2025-0022" target="_blank" rel="noopener">InSty: A Robust Multi-Level Cross-Granularity Fingerprint Embedding Algorithm for Multi-Turn Dialogue in Large Language Models</a>. SCIENTIA SINICA Informationis. CCF-A.', if: 7.6 },
+    { cite: 'W. Xing, M. Li, M. Li, M. Han. <a href="https://dl.acm.org/doi/10.1145/3806048" target="_blank" rel="noopener">Towards robust and secure embodied AI: A survey on vulnerabilities and attacks</a>. ACM Computing Surveys, 2025.', if: 23.8 },
+    { cite: 'M. Liu, Y. Liu, Q. Ren, M. Han. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525002003" target="_blank" rel="noopener">Rethinking multi-level information fusion in temporal graphs: Pre-training then distilling for better embedding</a>. Information Fusion, 2025.', if: 14.8 },
+    { cite: 'Y. Zhang, Q. Ren, Y. Chen, M. Han. <a href="https://link.springer.com/article/10.1007/s40747-025-02039-9" target="_blank" rel="noopener">Beyond contrastive learning: adaptive graph representations with mutual information maximization for blockchain and structured data</a>. Complex & Intelligent Systems, 2025.', if: 4.6 },
+    { cite: 'Z. Wang, Y. Chen, Y. Yao, M. Han, W. Xing, M. Li. <a href="https://ieeexplore.ieee.org/abstract/document/11098842" target="_blank" rel="noopener">IDCNet: Image Decomposition and Cross-view Distillation for Generalizable Deepfake Detection</a>. IEEE TIFS. CCF-A.', if: 8.0 },
+    { cite: 'J. Yu, W. Fan, Y. Guo, H. Lyu, H. Gao, C. Lin, M. Han, X. Cheng. <a href="https://ieeexplore.ieee.org/abstract/document/11118317/" target="_blank" rel="noopener">GenBEV: Generative Model With Semantic Compensation for Bird\'s Eye View Segmentation</a>. IEEE Transactions on Intelligent Transportation Systems, 2024.', if: 8.4 },
+    { cite: 'T. Qiao, B. Zhao, R. Shi, M. Han, M. Hassaballah, F. Retraint, X. Luo. <a href="https://ieeexplore.ieee.org/abstract/document/10680120" target="_blank" rel="noopener">Scalable universal adversarial watermark defending against facial forgery</a>. IEEE Transactions on Information Forensics and Security, 2024.', if: 8.0 },
+    { cite: 'Y. Zhuang, Y. Chen, X. Zhang, T. Ren, M. Han, M. Alam, Z. Hong. <a href="https://ieeexplore.ieee.org/abstract/document/10636342" target="_blank" rel="noopener">A Large-Scale Node Lightweight Consensus Algorithm of Blockchain for Internet of Things</a>. IEEE Internet of Things Journal, 2024.', if: 8.9 },
+    { cite: 'Z. Hong, M. Chen, R. Wang, M. Yan, D. Zheng, C. Lin, J. Su, M. Han. <a href="https://ieeexplore.ieee.org/abstract/document/10526449" target="_blank" rel="noopener">Active Learning-Based Backtracking Attack Against Source Location Privacy of Cyber-Physical System</a>. IEEE Transactions on Emerging Topics in Computational Intelligence, 2024.', if: 6.5 },
+    { cite: 'Z. Liu, C. Hu, C. Ruan, P. Hu, M. Han, J. Yu. <a href="https://ieeexplore.ieee.org/abstract/document/10478494" target="_blank" rel="noopener">An enhanced authentication and key agreement protocol for smart grid communication</a>. IEEE Internet of Things Journal, 2024.', if: 8.9 },
+    { cite: 'Y. Chen, Y. Zhang, Y. Zhuang, K. Miao, S. Pouriyeh, M. Han. <a href="https://ieeexplore.ieee.org/abstract/document/10381487" target="_blank" rel="noopener">Efficient and secure blockchain consensus algorithm for heterogeneous industrial Internet of Things nodes based on double-DAG</a>. IEEE Transactions on Industrial Informatics, 2024.', if: 9.9 },
+    { cite: 'Y. Wang, S. Wang, H. Luo, J. Dong, F. Wang, M. Han, X. Wang, M. Wang. <a href="https://ieeexplore.ieee.org/abstract/document/10440048" target="_blank" rel="noopener">Dual-view Curricular Optimal Transport for Cross-lingual Cross-modal Retrieval</a>. IEEE Transactions on Image Processing, 2024.', if: 13.7 },
+    { cite: 'Y. Chen, H. Chen, Z. Xiong, B. Liu, Z. Wang, M. Han. <a href="https://www.sciencedirect.com/science/article/pii/S2352864822002553" target="_blank" rel="noopener">Game theory attack pricing for mining pools in blockchain-based IoT</a>. Digital Communications and Networks, 2024.', if: 7.5 },
+    { cite: 'L. Liu, Z. Ma, Y. Zhou, M. Fan, M. Han. <a href="https://www.sciencedirect.com/science/article/pii/S2666721823001425" target="_blank" rel="noopener">Trust in ESG reporting: The intelligent veri-green solution for incentivized verification</a>. Blockchain: Research and Applications, 2024.', if: 5.6 },
+    { cite: 'B. Zhao, S. Ji, J. Xu, Y. Tian, Q. Wei, Q. Wang. <a href="https://arxiv.org/pdf/2212.13716" target="_blank" rel="noopener">One Bad Apple Spoils the Barrel: Understanding the Security Risks Introduced by Third-Party Components in IoT Firmware</a>. IEEE Transactions on Dependable and Secure Computing, 2023.', if: 7.5 },
+    { cite: 'L. Lu, Z. Wen, Y. Yuan, B. Dai, P. Qian, C. Lin, Q. He, Z. Liu, J. Chen, R. Ranjan. <a href="https://ieeexplore.ieee.org/abstract/document/9983476/" target="_blank" rel="noopener">A Trustworthy and Scalable Blockchain Analytics Platform</a>. IEEE Transactions on Dependable and Secure Computing, 2023.', if: 7.5 },
+    { cite: 'Z. Wang, J. Huang, K. Miao, X. Lv, Y. Chen, B. Su, L. Liu, M. Han. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1389128623004668" target="_blank" rel="noopener">Lightweight zero-knowledge authentication scheme for IoT embedded devices</a>. Computer Networks, 2023.', if: 4.6 },
+    { cite: 'J. Ma, Y. Liu, M. Han, C. Hu, Z. Ju. <a href="https://ieeexplore.ieee.org/abstract/document/10275075" target="_blank" rel="noopener">Propagation structure fusion for rumor detection based on node-level contrastive learning</a>. IEEE Transactions on Neural Networks and Learning Systems, 2023.', if: 8.9 },
+    { cite: 'C. Hu, Z. Liu, R. Li, P. Hu, T. Xiang, M. Han. <a href="https://ieeexplore.ieee.org/abstract/document/10198760" target="_blank" rel="noopener">Smart contract assisted privacy-preserving data aggregation and management scheme for smart grid</a>. IEEE Transactions on Dependable and Secure Computing, 2023.', if: 7.5 },
+    { cite: 'M. Han, Y. Weiping, Z. Yiyun, D. Wentao, S. Yanbin, L. Changting. <a href="https://jcs.iie.ac.cn/xxaqxb/ch/reader/view_abstract.aspx?file_no=20230302&flag=1" target="_blank" rel="noopener">Adversarial sample detection based on feature distribution differences</a>. Journal of Information Security, 2023.', if: 1.89, ifNote: 'composite' },
+    { cite: 'W. Xing, J. Chen, Y. Guo, <a href="https://link.springer.com/article/10.1007/s11633-022-1381-9" target="_blank" rel="noopener">Robust Local Light Field Synthesis via Occlusion-aware Sampling and Deep Visual Feature Fusion</a>, Machine Intelligence Research (MIR) 20, 408–420 (2023).', if: 8.7 }
   ],
   conference: [
     { cite: 'W. Xing, M. Fang, G. Wang, C. Lin, M. Han. Silencing the Guardrails: Inference-Time Jailbreaking via Dynamic Contextual Representation Ablation. ACL, 2026. CCF-A.' },
@@ -55,6 +56,12 @@ window.PAPERS = {
     { cite: 'X. Yang, G. Li, C. Zhang, M. Han, W. Yang. <a href="https://www.ijcai.org/proceedings/2023/0739.pdf" target="_blank" rel="noopener">PerCBA: Persistent Clean-label Backdoor Attacks on Semi-Supervised Graph Node Classification</a>. IJCAI Workshop on Artificial Intelligence Safety, 2023.' }
   ],
   preprints: [
+    { cite: 'Z. Yu, W. Xing, C. Ye, X. Teng, B. Yang, C. Lin, M. Han. <a href="https://arxiv.org/abs/2605.27157" target="_blank" rel="noopener">Detecting Is Not Resolving: The Monitoring Control Gap in Retrieval Augmented LLMs</a>. arXiv, 2026.' },
+    { cite: 'Z. Yu, W. Xing, Y. Wei, B. Yang, C. Ye, G. Li, M. Han. <a href="https://arxiv.org/abs/2605.26778" target="_blank" rel="noopener">The Attribution Blind Spot: Detecting When Language Models Rely on Memory Rather Than Retrieved Context</a>. arXiv, 2026.' },
+    { cite: 'Z. Yu, W. Xing, Y. Wei, J. Chen, H. Wang, X. Teng, M. Han. <a href="https://arxiv.org/abs/2605.26789" target="_blank" rel="noopener">Composition Collapse: Stable Factual Knowledge Does Not Imply Compositional Reasoning</a>. arXiv, 2026.' },
+    { cite: 'Z. Yu, W. Xing, G. Li, S. Xiong, H. Wang, X. Teng, M. Han. <a href="https://arxiv.org/abs/2605.26754" target="_blank" rel="noopener">Cordon-MAS: Defending RAG against Knowledge Poisoning via Information-Flow Control</a>. arXiv, 2026.' },
+    { cite: 'Z. Yu, W. Xing, M. Han. <a href="https://arxiv.org/abs/2604.05358" target="_blank" rel="noopener">LatentAudit: Real-Time White-Box Faithfulness Monitoring for Retrieval-Augmented Generation with Verifiable Deployment</a>. arXiv, 2026.' },
+    { cite: 'Z. Yu, W. Xing, M. Han. <a href="https://arxiv.org/abs/2604.05348" target="_blank" rel="noopener">From Retinal Evidence to Safe Decisions: RETINA-SAFE and ECRT for Hallucination Risk Triage in Medical LLMs</a>. arXiv, 2026.' },
     { cite: 'S. Donkada, S. Pouriyeh, R. M. Parizi, M. Han, N. Dehbozorgi, N. Sakib, Q. Z. Sheng. <a href="https://arxiv.org/abs/2308.13714" target="_blank" rel="noopener">Uncovering promises and challenges of federated learning to detect cardiovascular diseases: A scoping literature review</a>. arXiv, 2023.' },
     { cite: 'L. Yu, M. Han, Y. Li, C. Lin, Y. Zhang, M. Zhang, Y. Liu, H. Weng, Y. Jeon, K.-H. Chow, et al. <a href="https://arxiv.org/abs/2402.03688" target="_blank" rel="noopener">A survey of privacy threats and defense in vertical federated learning: From model life cycle perspective</a>. arXiv, 2024.' },
     { cite: 'S. Lin, R. Li, X. Wang, C. Lin, W. Xing, M. Han. <a href="https://arxiv.org/abs/2407.16205" target="_blank" rel="noopener">Figure it out: Analyzing-based jailbreak attack on large language models</a>. arXiv, 2024.' },
@@ -142,7 +149,7 @@ window.HIGHLIGHTS = {
         },
         {
           title: '幻觉检测与缓解',
-          items: ['DISF：通过双路径内部状态强制检测RAG中的幻觉', '多智能体协作与动态状态追踪的幻觉缓解', '基于隐状态插值的可用性增强']
+          items: ['DISF：通过双路径内部状态强制检测RAG中的幻觉', 'LatentAudit：RAG白盒忠实度实时监测与可验证部署', 'Attribution Blind Spot：检测模型依赖记忆而非检索上下文', 'Detecting Is Not Resolving：揭示RAG监测—控制鸿沟', 'RETINA-SAFE：医疗大模型幻觉风险分层与安全决策']
         }
       ]
     },
@@ -330,7 +337,7 @@ window.HIGHLIGHTS = {
         },
         {
           title: 'Hallucination Detection & Mitigation',
-          items: ['DISF: Detecting hallucinations in RAG via dual-path internal state forcing', 'Hallucination mitigation via multi-agent collaboration and dynamic state tracking', 'Usability enhancement via hidden-state interpolation']
+          items: ['DISF: Detecting hallucinations in RAG via dual-path internal state forcing', 'LatentAudit: Real-time white-box faithfulness monitoring for RAG', 'Attribution Blind Spot: Detecting memory-vs-retrieval reliance', 'Detecting Is Not Resolving: The monitoring–control gap in RAG', 'RETINA-SAFE: Hallucination risk triage for medical LLMs']
         }
       ]
     },
@@ -457,112 +464,4 @@ if (window.HIGHLIGHTS) {
   window.HIGHLIGHTS.th = window.HIGHLIGHTS.en;
 }
 
-/* 发明专利 - 完整列表（中英） */
-window.PATENTS_FULL = {
-  zh: {
-    categories: [
-      { title: '大模型安全与对齐', items: [
-        '一种基于神经元再学习的大语言模型安全对齐风险评估方法和设备。2025.',
-        '一种基于双层引导稀疏策略的大视觉语言模型鲁棒性评估方法及设备。2025.',
-        '基于动态调控的大语言模型可信安全保护防御方法。2025.',
-        '基于强化学习的大语言模型可信安全防御方法。2025.',
-        '面向不同年龄段儿童的语言模型安全评估方法及装置。2025.'
-      ]},
-      { title: '大模型版权保护与指纹', items: [
-        '基于旁支网络的模型指纹注入与验证方法。申请号: 202511141549.7. 2025. [已授权]',
-        '基于亲缘关系与文本特征匹配的模型版权保护方法及装置。申请号: 202510737612.7. 2025.',
-        '基于指纹成员概率偏移信号的大模型版权保护方法及装置。申请号: 202510683362.3. 2025. [已授权]',
-        '基于幻觉上下文嵌入的大语言模型所有权认证方法及装置。2025.',
-        '一种基于多扰动空间联合优化的多模态大模型指纹生成方法。2025.',
-        '一种基于动态指纹生成器的视觉大模型版权保护方法。2025.',
-        '基于区块链与模型指纹的模型权重所有权确认方法及装置。申请号: 202510869757.2. 2025.'
-      ]},
-      { title: '大模型能力增强与干预', items: [
-        '一种基于梯度与强化学习的语言模型干预方法。申请号: 202511065011.2. 2025.',
-        '基于隐状态插值的大语言模型可用性增强方法及装置。申请号: 202510669778.X. 2025. [已授权]',
-        '一种基于强化学习增强大语言模型多轮对话能力的方法。2025.',
-        '一种基于多阶段自适应和难负样本对比学习的大语言模型工具调用方法。2025.',
-        '一种基于多智能体协作与动态状态追踪的大模型幻觉缓解方法。2025. [待申请]'
-      ]},
-      { title: '多模态与视觉模型', items: [
-        '基于神经基与张量分解的神经辐射场渲染方法及装置。CN119180898B. 2025. [已授权]',
-        '基于扩散模型的新视角合成方法。申请号: 202510245286.8. 2025.',
-        '基于3D Gaussian Splatting与水下成像模型的水下三维场景重建方法及装置。申请号: 202510083143.1. 2025.',
-        '基于热图引导的三模态级联融合视觉-语言模型伪造检测方法。2025.'
-      ]},
-      { title: '上下文协议与攻击防御', items: [
-        '一种大语言模型上下文协议聚类精准采样方法与装置。申请号: 202511102851.1. 2025.',
-        '一种面向模型上下文协议的三层协同攻击检测与防御方法。2025.',
-        '基于模型同化的可疑模型后门类别定位方法。申请号: 202510730424.1. 2025. [已授权]'
-      ]},
-      { title: '区块链与可信系统', items: [
-        '基于分层粒子群优化的区块链系统资源监测与动态调度方法。申请号: 202510620413.8. 2025.',
-        '基于多阶段自适应混合智能优化的分布式异构系统资源管理与智能路由方法。申请号: 202511305216.3. 2025.',
-        '一种支持多用户匿名身份代理的智能体可信交互系统及方法。2025.',
-        '一种链上链下身份关联与验证架构及方法。2025.',
-        '基于区块链与差分隐私的交易过程数据发布方法和系统。2025.'
-      ]},
-      { title: '医疗AI与专业领域应用', items: [
-        '一种基于动态代价图匹配与推理路径逻辑审查的医疗语言模型评估方法及装置。2025.',
-        '一种多模态医疗AI决策行为一致性评估方法。2025. [待申请]',
-        '一种基于神经符号与多智能体协同的数字文化遗产活化与动态推演系统及方法。2025.'
-      ]}
-    ]
-  },
-  en: {
-    categories: [
-      { title: 'LLM Safety & Alignment', items: [
-        'Method and device for safety alignment risk assessment of LLMs via neuron relearning. 2025.',
-        'Method and device for robustness evaluation of large vision-language models via dual-layer guided sparse strategy. 2025.',
-        'Trusted safety defense method for LLMs based on dynamic regulation. 2025.',
-        'Trusted safety defense method for LLMs based on reinforcement learning. 2025.',
-        'Method and device for language model safety evaluation for children of different ages. 2025.'
-      ]},
-      { title: 'LLM Copyright & Fingerprinting', items: [
-        'Model fingerprint injection and verification method based on side-branch network. Appl. 202511141549.7. 2025. [Granted]',
-        'Model copyright protection method and device based on kinship and text feature matching. Appl. 202510737612.7. 2025.',
-        'Method and device for LLM copyright protection based on fingerprint member probability shift. Appl. 202510683362.3. 2025. [Granted]',
-        'LLM ownership authentication method and device based on hallucination context embedding. 2025.',
-        'Multimodal LLM fingerprint generation method based on multi-perturbation space joint optimization. 2025.',
-        'Visual LLM copyright protection method based on dynamic fingerprint generator. 2025.',
-        'Model weight ownership confirmation method and device based on blockchain and model fingerprint. Appl. 202510869757.2. 2025.'
-      ]},
-      { title: 'LLM Capability & Intervention', items: [
-        'Language model intervention method based on gradient and reinforcement learning. Appl. 202511065011.2. 2025.',
-        'LLM usability enhancement method and device based on hidden-state interpolation. Appl. 202510669778.X. 2025. [Granted]',
-        'Method for enhancing LLM multi-turn dialogue capability via reinforcement learning. 2025.',
-        'LLM tool invocation method based on multi-stage adaptive and hard negative contrastive learning. 2025.',
-        'LLM hallucination mitigation method based on multi-agent collaboration and dynamic state tracking. 2025. [Pending]'
-      ]},
-      { title: 'Multimodal & Vision', items: [
-        'Neural radiance field rendering method and device based on neural basis and tensor decomposition. CN119180898B. 2025. [Granted]',
-        'Novel view synthesis method based on diffusion models. Appl. 202510245286.8. 2025.',
-        'Underwater 3D scene reconstruction method and device based on 3D Gaussian Splatting and underwater imaging model. Appl. 202510083143.1. 2025.',
-        'Heatmap-guided tri-modal cascaded fusion visual-language model forgery detection method. 2025.'
-      ]},
-      { title: 'Context Protocol & Attack Defense', items: [
-        'Method and device for precise sampling of LLM context protocol based on clustering. Appl. 202511102851.1. 2025.',
-        'Three-layer collaborative attack detection and defense method for model context protocol. 2025.',
-        'Method for locating backdoor classes in suspicious models based on model assimilation. Appl. 202510730424.1. 2025. [Granted]'
-      ]},
-      { title: 'Blockchain & Trusted Systems', items: [
-        'Blockchain resource monitoring and dynamic scheduling method based on hierarchical particle swarm optimization. Appl. 202510620413.8. 2025.',
-        'Distributed heterogeneous system resource management and intelligent routing method based on multi-stage adaptive hybrid optimization. Appl. 202511305216.3. 2025.',
-        'Agent trusted interaction system and method supporting multi-user anonymous identity proxy. 2025.',
-        'On-chain and off-chain identity association and verification architecture and method. 2025.',
-        'Transaction data publication method and system based on blockchain and differential privacy. 2025.'
-      ]},
-      { title: 'Medical AI & Domain Applications', items: [
-        'Medical language model evaluation method and device based on dynamic cost graph matching and reasoning path logic review. 2025.',
-        'Multimodal medical AI decision behavior consistency evaluation method. 2025. [Pending]',
-        'Digital cultural heritage activation and dynamic deduction system and method based on neuro-symbolic and multi-agent collaboration. 2025.'
-      ]}
-    ]
-  }
-};
-if (window.PATENTS_FULL) {
-  window.PATENTS_FULL.zhtw = window.PATENTS_FULL.zh;
-  window.PATENTS_FULL.ja = window.PATENTS_FULL.en;
-  window.PATENTS_FULL.ko = window.PATENTS_FULL.en;
-  window.PATENTS_FULL.th = window.PATENTS_FULL.en;
-}
+/* 专利完整列表见 patents-data.js（PATENTS_FULL） */
