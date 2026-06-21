@@ -55,7 +55,7 @@ window.RESUME = {
     postdocs: [
       { name: '孔德章', role: '研究员 · PhD, 浙江大学', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/dezhang-kong.jpeg'},
       { name: '王广泰', role: '研究员 · PhD, 澳门大学', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' , avatar: 'people_photos/guangtai-wang.jpg'},
-      { name: '罗岩', role: '研究员 (预计入职) · PhD, 合肥工业大学', email: '', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: '罗岩', role: '研究员 · PhD, 合肥工业大学', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
       { name: '邢文鹏', role: '研究员 · PhD, 香港浸会大学', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/wenpeng-xing.png', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: '研究助理',
@@ -130,7 +130,8 @@ window.RESUME = {
       { name: '于佳辉', role: '研究员 · 浙江大学滨江研究院', email: '', link: '', gender: 'female' , avatar: 'people_photos/jiahui-yu.png'},
       { name: '温震宇', role: '教授 · 浙江工业大学', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: '乔通', role: '副教授 · 杭州电子科技大学', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
-      { name: '周晓飞', role: '副教授 · 杭州电子科技大学', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'}
+      { name: '周晓飞', role: '副教授 · 杭州电子科技大学', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: '李默涵', role: '教授 · 广州大学网络空间安全学院', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
       { date: '2026-04', dateLabel: '2026年4月', title: 'IFRC实验室在 ACL 2026 录用 7 篇论文', summary: '近日，国际自然语言处理顶级会议 ACL 2026 公布录用结果。IFRC实验室共有 7 篇论文被录用。<br><br>本次成果聚焦大语言模型与智能体系统的安全与可信问题，涵盖模型越狱攻击、防御框架、多智能体安全、行为评测基准以及生成内容幻觉检测等多个前沿方向，形成了从攻击分析到防御与评测的系统性研究布局。', link: '' },
@@ -155,7 +156,7 @@ window.RESUME = {
     postdocs: [
       { name: '孔德章', role: '研究員 · PhD, 浙江大學', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/dezhang-kong.jpeg'},
       { name: '王廣泰', role: '研究員 · PhD, 澳門大學', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', avatar: 'people_photos/guangtai-wang.jpg', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' },
-      { name: '羅岩', role: '研究員 (預計入職) · PhD, 合肥工業大學', email: '', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: '羅岩', role: '研究員 · PhD, 合肥工業大學', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
       { name: '邢文鵬', role: '研究員 · PhD, 香港浸會大學', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/wenpeng-xing.png', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: '研究助理',
@@ -230,7 +231,8 @@ window.RESUME = {
       { name: '于佳輝', role: '研究員 · 浙江大學濱江研究院', email: '', link: '', gender: 'female', avatar: 'people_photos/jiahui-yu.png' },
       { name: '溫震宇', role: '教授 · 浙江工業大學', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: '喬通', role: '副教授 · 杭州電子科技大學', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
-      { name: '周曉飛', role: '副教授 · 杭州電子科技大學', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'}
+      { name: '周曉飛', role: '副教授 · 杭州電子科技大學', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: '李默涵', role: '教授 · 廣州大學網絡空間安全學院', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
       { date: '2026-04', dateLabel: '2026年4月', title: 'IFRC實驗室於 ACL 2026 錄取 7 篇論文', summary: '近日，國際自然語言處理頂級會議 ACL 2026 公布錄用結果。IFRC實驗室共有 7 篇論文被錄用。<br><br>本次成果聚焦大語言模型與智能體系統的安全與可信問題，涵蓋模型越獄攻擊、防禦框架、多智能體安全、行為評測基準以及生成內容幻覺檢測等多個前沿方向，形成了從攻擊分析到防禦與評測的系統性研究布局。', link: '' },
@@ -292,7 +294,7 @@ window.RESUME = {
     postdocs: [
       { name: 'Dezhang Kong', role: 'Researcher · PhD, Zhejiang University', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/dezhang-kong.jpeg'},
       { name: 'Guangtai Wang', role: 'Researcher · PhD, Macau University', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' , avatar: 'people_photos/guangtai-wang.jpg'},
-      { name: 'Yan Luo', role: 'Researcher (expected to join) · PhD, Hefei University of Technology', email: '', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: 'Yan Luo', role: 'Researcher · PhD, Hefei University of Technology', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
       { name: 'Wenpeng Xing', role: 'Researcher · PhD, Hong Kong Baptist University', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/wenpeng-xing.png', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: 'Research Assistants',
@@ -367,7 +369,8 @@ window.RESUME = {
       { name: 'Jiahui Yu', role: 'Researcher · Binjiang Institute of ZJU', email: '', link: '', gender: 'female' , avatar: 'people_photos/jiahui-yu.png'},
       { name: 'Zhenyu Wen', role: 'Professor · Zhejiang University of Technology', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: 'Tong Qiao', role: 'Associate Professor · Hangzhou Dianzi University', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
-      { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'}
+      { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: 'Mohan Li', role: 'Professor · School of Cyberspace Security, Guangzhou University', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
       { date: '2026-04', dateLabel: 'Apr 2026', title: 'IFRC lab: 7 papers accepted at ACL 2026', summary: 'ACL 2026, a leading NLP conference, has announced its acceptances. The IFRC lab has 7 papers accepted.<br><br>This work addresses safety and trustworthiness of large language models and agent systems, spanning jailbreak attacks, defense frameworks, multi-agent security, behavioral evaluation benchmarks, and hallucination detection in generated content—forming a coherent line from attack analysis to defense and evaluation.', link: '' },
@@ -432,7 +435,7 @@ window.RESUME = {
     postdocs: [
       { name: 'Dezhang Kong', role: '研究員 · PhD, Zhejiang University', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/dezhang-kong.jpeg'},
       { name: 'Guangtai Wang', role: '研究員 · PhD, Macau University', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', avatar: 'people_photos/guangtai-wang.jpg', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' },
-      { name: 'Yan Luo', role: '研究員 (入職予定) · PhD, Hefei University of Technology', email: '', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: 'Yan Luo', role: '研究員 · PhD, Hefei University of Technology', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
       { name: 'Wenpeng Xing', role: '研究員 · PhD, Hong Kong Baptist University', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/wenpeng-xing.png', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: '研究アシスタント',
@@ -507,7 +510,8 @@ window.RESUME = {
       { name: 'Jiahui Yu', role: 'Researcher · Binjiang Institute of ZJU', email: '', link: '', gender: 'female' , avatar: 'people_photos/jiahui-yu.png'},
       { name: 'Zhenyu Wen', role: 'Professor · Zhejiang University of Technology', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: 'Tong Qiao', role: 'Associate Professor · Hangzhou Dianzi University', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
-      { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'}
+      { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: 'Mohan Li', role: 'Professor · School of Cyberspace Security, Guangzhou University', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
       { date: '2026-04', dateLabel: '2026年4月', title: 'IFRC研究室、ACL 2026で論文7本採択', summary: '自然言語処理のトップ会議 ACL 2026 の採択結果が発表され、IFRC研究室から計7本の論文が採択されました。<br><br>大規模言語モデルとエージェントシステムの安全性・信頼性に焦点を当て、ジェイルブレイク攻撃、防御フレームワーク、マルチエージェントの安全性、行動評価ベンチマーク、生成コンテンツの幻覚検出などをカバーし、攻撃分析から防御・評価まで一貫した研究体制を示しています。', link: '' },
@@ -548,7 +552,7 @@ window.RESUME = {
     postdocs: [
       { name: '콩더장', role: '연구원 · PhD, 저장대학 (Zhejiang University)', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/dezhang-kong.jpeg'},
       { name: '왕광타이', role: '연구원 · PhD, 마카오대학', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', avatar: 'people_photos/guangtai-wang.jpg', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' },
-      { name: '로옌', role: '연구원 (입사 예정) · PhD, Hefei University of Technology', email: '', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: '로옌', role: '연구원 · PhD, Hefei University of Technology', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
       { name: '싱원펑', role: '연구원 · PhD, 홍콩침회대학 (Hong Kong Baptist University)', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/wenpeng-xing.png', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: '연구 보조원',
@@ -623,7 +627,8 @@ window.RESUME = {
       { name: 'Jiahui Yu', role: 'Researcher · Binjiang Institute of ZJU', email: '', link: '', gender: 'female' , avatar: 'people_photos/jiahui-yu.png'},
       { name: 'Zhenyu Wen', role: 'Professor · Zhejiang University of Technology', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: 'Tong Qiao', role: 'Associate Professor · Hangzhou Dianzi University', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
-      { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'}
+      { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: 'Mohan Li', role: 'Professor · School of Cyberspace Security, Guangzhou University', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
       { date: '2026-04', dateLabel: '2026년 4월', title: 'IFRC 연구실, ACL 2026 논문 7편 채택', summary: '자연어처리 최고 수준 학회 ACL 2026의 채택 결과가 발표되었으며, IFRC 연구실 논문 7편이 채택되었습니다.<br><br>대규모 언어 모델과 에이전트 시스템의 안전·신뢰 문제에 초점을 맞추어, 모델 탈옥 공격, 방어 프레임워크, 다중 에이전트 안전, 행동 평가 벤치마크, 생성 콘텐츠 환각 탐지 등을 포괄하며 공격 분석에서 방어·평가에 이르는 체계적 연구 축을 형성했습니다.', link: '' },
@@ -676,7 +681,7 @@ window.RESUME = {
     postdocs: [
       { name: 'Dezhang Kong', role: 'Researcher · PhD, Zhejiang University', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/dezhang-kong.jpeg'},
       { name: 'Guangtai Wang', role: 'Researcher · PhD, Macau University', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' , avatar: 'people_photos/guangtai-wang.jpg'},
-      { name: 'Yan Luo', role: 'Researcher (expected to join) · PhD, Hefei University of Technology', email: '', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: 'Yan Luo', role: 'Researcher · PhD, Hefei University of Technology', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/luo-yan.png', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
       { name: 'Wenpeng Xing', role: 'Researcher · PhD, Hong Kong Baptist University', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/wenpeng-xing.png', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: 'Research Assistants',
@@ -751,7 +756,8 @@ window.RESUME = {
       { name: 'Jiahui Yu', role: 'Researcher · Binjiang Institute of ZJU', email: '', link: '', gender: 'female' , avatar: 'people_photos/jiahui-yu.png'},
       { name: 'Zhenyu Wen', role: 'Professor · Zhejiang University of Technology', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: 'Tong Qiao', role: 'Associate Professor · Hangzhou Dianzi University', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
-      { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'}
+      { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: 'Mohan Li', role: 'Professor · School of Cyberspace Security, Guangzhou University', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
       { date: '2026-04', dateLabel: 'เม.ย. 2026', title: 'ห้องวิจัย IFRC มีบทความ 7 เรื่องได้รับการคัดเลือกที่ ACL 2026', summary: 'การประชุม NLP ระดับแนวหน้า ACL 2026 ประกาศผลการคัดเลือกแล้ว ห้องวิจัย IFRC มีบทความได้รับการคัดเลือก 7 เรื่อง<br><br>ผลงานนี้เน้นความปลอดภัยและความน่าเชื่อถือของโมเดลภาษาขนาดใหญ่และระบบเอเจนต์ ครอบคลุมการโจมตีแบบ jailbreak กรอบป้องกัน ความปลอดภัยของระบบหลายเอเจนต์ มาตรฐานประเมินพฤติกรรม และการตรวจจับภาพหลอนในเนื้อหาที่สร้างขึ้น สร้างแนวทางวิจัยจากการวิเคราะห์การโจมตีไปจนถึงการป้องกันและการประเมิน', link: '' },
