@@ -131,6 +131,9 @@ window.RESUME = {
       { name: '温震宇', role: '教授 · 浙江工业大学', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: '乔通', role: '副教授 · 杭州电子科技大学', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
       { name: '周晓飞', role: '副教授 · 杭州电子科技大学', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: '陈超超', role: '百人计划研究员、博士生导师 · 浙江大学人工智能学院', email: 'zjuccc@zju.edu.cn', link: 'https://person.zju.edu.cn/zjuccc', gender: 'male', avatar: 'people_photos/chaochao-chen.jpg' },
+      { name: '苗东菁', role: '教授、博士生导师 · 哈尔滨工业大学计算学部', email: 'miaodongjing@hit.edu.cn', link: 'https://homepage.hit.edu.cn/miaodongjing', gender: 'male', avatar: 'people_photos/dongqing-miao.png' },
+      { name: '胡春强', role: '百人计划学者、教授、博士生导师 · 重庆大学', email: 'chu@cqu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/chunqiang-hu.png' },
       { name: '李默涵', role: '教授 · 广州大学网络空间安全学院', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
@@ -232,6 +235,9 @@ window.RESUME = {
       { name: '溫震宇', role: '教授 · 浙江工業大學', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: '喬通', role: '副教授 · 杭州電子科技大學', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
       { name: '周曉飛', role: '副教授 · 杭州電子科技大學', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: '陳超超', role: '百人計劃研究員、博士生導師 · 浙江大學人工智能學院', email: 'zjuccc@zju.edu.cn', link: 'https://person.zju.edu.cn/zjuccc', gender: 'male', avatar: 'people_photos/chaochao-chen.jpg' },
+      { name: '苗東菁', role: '教授、博士生導師 · 哈爾濱工業大學計算學部', email: 'miaodongjing@hit.edu.cn', link: 'https://homepage.hit.edu.cn/miaodongjing', gender: 'male', avatar: 'people_photos/dongqing-miao.png' },
+      { name: '胡春強', role: '百人計劃學者、教授、博士生導師 · 重慶大學', email: 'chu@cqu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/chunqiang-hu.png' },
       { name: '李默涵', role: '教授 · 廣州大學網絡空間安全學院', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
@@ -370,6 +376,9 @@ window.RESUME = {
       { name: 'Zhenyu Wen', role: 'Professor · Zhejiang University of Technology', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: 'Tong Qiao', role: 'Associate Professor · Hangzhou Dianzi University', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
       { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: 'Chaochao Chen', role: 'Hundred Talents Program Researcher & PhD Supervisor · School of Artificial Intelligence, Zhejiang University', email: 'zjuccc@zju.edu.cn', link: 'https://person.zju.edu.cn/zjuccc', gender: 'male', avatar: 'people_photos/chaochao-chen.jpg' },
+      { name: 'Dongjing Miao', role: 'Professor & PhD Supervisor · Faculty of Computing, Harbin Institute of Technology', email: 'miaodongjing@hit.edu.cn', link: 'https://homepage.hit.edu.cn/miaodongjing', gender: 'male', avatar: 'people_photos/dongqing-miao.png' },
+      { name: 'Chunqiang Hu', role: 'Hundred Talents Program Scholar, Professor & PhD Supervisor · Chongqing University', email: 'chu@cqu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/chunqiang-hu.png' },
       { name: 'Mohan Li', role: 'Professor · School of Cyberspace Security, Guangzhou University', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
@@ -511,6 +520,9 @@ window.RESUME = {
       { name: 'Zhenyu Wen', role: 'Professor · Zhejiang University of Technology', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: 'Tong Qiao', role: 'Associate Professor · Hangzhou Dianzi University', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
       { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: 'Chaochao Chen', role: 'Hundred Talents Program Researcher & PhD Supervisor · School of Artificial Intelligence, Zhejiang University', email: 'zjuccc@zju.edu.cn', link: 'https://person.zju.edu.cn/zjuccc', gender: 'male', avatar: 'people_photos/chaochao-chen.jpg' },
+      { name: 'Dongjing Miao', role: 'Professor & PhD Supervisor · Faculty of Computing, Harbin Institute of Technology', email: 'miaodongjing@hit.edu.cn', link: 'https://homepage.hit.edu.cn/miaodongjing', gender: 'male', avatar: 'people_photos/dongqing-miao.png' },
+      { name: 'Chunqiang Hu', role: 'Hundred Talents Program Scholar, Professor & PhD Supervisor · Chongqing University', email: 'chu@cqu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/chunqiang-hu.png' },
       { name: 'Mohan Li', role: 'Professor · School of Cyberspace Security, Guangzhou University', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
@@ -628,6 +640,9 @@ window.RESUME = {
       { name: 'Zhenyu Wen', role: 'Professor · Zhejiang University of Technology', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: 'Tong Qiao', role: 'Associate Professor · Hangzhou Dianzi University', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
       { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: 'Chaochao Chen', role: 'Hundred Talents Program Researcher & PhD Supervisor · School of Artificial Intelligence, Zhejiang University', email: 'zjuccc@zju.edu.cn', link: 'https://person.zju.edu.cn/zjuccc', gender: 'male', avatar: 'people_photos/chaochao-chen.jpg' },
+      { name: 'Dongjing Miao', role: 'Professor & PhD Supervisor · Faculty of Computing, Harbin Institute of Technology', email: 'miaodongjing@hit.edu.cn', link: 'https://homepage.hit.edu.cn/miaodongjing', gender: 'male', avatar: 'people_photos/dongqing-miao.png' },
+      { name: 'Chunqiang Hu', role: 'Hundred Talents Program Scholar, Professor & PhD Supervisor · Chongqing University', email: 'chu@cqu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/chunqiang-hu.png' },
       { name: 'Mohan Li', role: 'Professor · School of Cyberspace Security, Guangzhou University', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
@@ -757,6 +772,9 @@ window.RESUME = {
       { name: 'Zhenyu Wen', role: 'Professor · Zhejiang University of Technology', email: 'zhenyuwen@zjut.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/zhenyu-wen.png'},
       { name: 'Tong Qiao', role: 'Associate Professor · Hangzhou Dianzi University', email: 'tong.qiao@hdu.edu.cn', link: '', gender: 'male' , avatar: 'people_photos/tong-qiao.png'},
       { name: 'Xiaofei Zhou', role: 'Associate Professor · Hangzhou Dianzi University', email: 'zxforchid@163.com', link: '', gender: 'female' , avatar: 'people_photos/xiaofei-zhou.png'},
+      { name: 'Chaochao Chen', role: 'Hundred Talents Program Researcher & PhD Supervisor · School of Artificial Intelligence, Zhejiang University', email: 'zjuccc@zju.edu.cn', link: 'https://person.zju.edu.cn/zjuccc', gender: 'male', avatar: 'people_photos/chaochao-chen.jpg' },
+      { name: 'Dongjing Miao', role: 'Professor & PhD Supervisor · Faculty of Computing, Harbin Institute of Technology', email: 'miaodongjing@hit.edu.cn', link: 'https://homepage.hit.edu.cn/miaodongjing', gender: 'male', avatar: 'people_photos/dongqing-miao.png' },
+      { name: 'Chunqiang Hu', role: 'Hundred Talents Program Scholar, Professor & PhD Supervisor · Chongqing University', email: 'chu@cqu.edu.cn', link: '', gender: 'male', avatar: 'people_photos/chunqiang-hu.png' },
       { name: 'Mohan Li', role: 'Professor · School of Cyberspace Security, Guangzhou University', email: 'limohan@gzhu.edu.cn', link: '', gender: 'female', avatar: 'people_photos/limohan.jpg' }
     ],
     news: [
