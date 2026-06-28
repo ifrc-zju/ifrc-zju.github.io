@@ -528,11 +528,15 @@
       var embed = document.body.classList.contains('topology-embed');
       var CORE_BG_X = 80;
       var CORE_BG_W = 1520;
-      var FLOW_COLS = 4;
+      var FLOW_COLS = 3;
       var CARD_GAP = 14;
       var LAYER_INNER_PAD = embed ? 16 : 20;
       var CONTENT_W = CORE_BG_W - LAYER_INNER_PAD * 2;
       var CARD_MAX_W = Math.floor((CONTENT_W - (FLOW_COLS - 1) * CARD_GAP) / FLOW_COLS);
+      var CARD_FIXED_H = Math.ceil(
+        parseFloat(getComputedStyle(document.body).getPropertyValue('--topology-card-h')) ||
+        (embed ? 156 : 158)
+      );
       var CARD_FIXED_H = embed ? 130 : 138;
       var PILL_H = CARD_FIXED_H;
       var SVG_W = 1680;
