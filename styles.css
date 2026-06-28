@@ -1674,9 +1674,8 @@ img {
 .research-topology-iframe {
   display: block;
   width: 100%;
-  /* 初始高度偏大，子页 postMessage 会收敛；避免首屏底部被裁切 */
-  height: 2600px;
-  min-height: 1200px;
+  height: 1200px;      /* 只是首屏兜底高度，后面由 JS 自动更新 */
+  min-height: 0;
   border: 0;
   vertical-align: top;
   background: transparent;
@@ -1689,8 +1688,8 @@ img {
   }
 
   .research-topology-iframe {
-    min-height: 900px;
-    height: 2200px;
+    height: 900px;
+    min-height: 0;
   }
 }
 
