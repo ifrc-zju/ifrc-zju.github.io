@@ -637,9 +637,11 @@
       if (!iframe) return;
       var h = parseInt(data.height, 10);
       if (h >= 400 && h <= 24000) {
-        var nextH = h + 56;
+        var nextH = h + 24;
         var curH = parseInt(iframe.style.height, 10) || 0;
-        iframe.style.height = Math.max(nextH, curH) + 'px';
+        if (Math.abs(curH - nextH) > 8) {
+          iframe.style.height = nextH + 'px';
+        }
       }
     });
 
