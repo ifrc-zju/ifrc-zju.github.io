@@ -56,6 +56,7 @@ window.RESUME = {
       { name: '孔德章', role: '研究员 · PhD, 浙江大学', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/optimized/dezhang-kong.jpeg.webp'},
       { name: '王广泰', role: '研究员 · PhD, 澳门大学', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' , avatar: 'people_photos/optimized/guangtai-wang.jpg.webp'},
       { name: '罗岩', role: '研究员 · PhD, 合肥工业大学', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/optimized/luo-yan.png.webp', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: '李寅龙', role: '研究员 · PhD, 哈尔滨工业大学', email: '', link: '', avatar: 'people_photos/optimized/yinlong-li.png.webp' },
       { name: '邢文鹏', role: '研究员 · PhD, 香港浸会大学', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/optimized/wenpeng-xing.png.webp', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: '研究助理',
@@ -160,6 +161,7 @@ window.RESUME = {
       { name: '孔德章', role: '研究員 · PhD, 浙江大學', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/optimized/dezhang-kong.jpeg.webp'},
       { name: '王廣泰', role: '研究員 · PhD, 澳門大學', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', avatar: 'people_photos/optimized/guangtai-wang.jpg.webp', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' },
       { name: '羅岩', role: '研究員 · PhD, 合肥工業大學', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/optimized/luo-yan.png.webp', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: '李寅龍', role: '研究員 · PhD, 哈爾濱工業大學', email: '', link: '', avatar: 'people_photos/optimized/yinlong-li.png.webp' },
       { name: '邢文鵬', role: '研究員 · PhD, 香港浸會大學', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/optimized/wenpeng-xing.png.webp', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: '研究助理',
@@ -301,6 +303,7 @@ window.RESUME = {
       { name: 'Dezhang Kong', role: 'Researcher · PhD, Zhejiang University', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/optimized/dezhang-kong.jpeg.webp'},
       { name: 'Guangtai Wang', role: 'Researcher · PhD, Macau University', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' , avatar: 'people_photos/optimized/guangtai-wang.jpg.webp'},
       { name: 'Yan Luo', role: 'Researcher · PhD, Hefei University of Technology', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/optimized/luo-yan.png.webp', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: 'Yinlong Li', role: 'Researcher · PhD, Harbin Institute of Technology', email: '', link: '', avatar: 'people_photos/optimized/yinlong-li.png.webp' },
       { name: 'Wenpeng Xing', role: 'Researcher · PhD, Hong Kong Baptist University', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/optimized/wenpeng-xing.png.webp', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: 'Research Assistants',
@@ -445,6 +448,7 @@ window.RESUME = {
       { name: 'Dezhang Kong', role: '研究員 · PhD, Zhejiang University', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/optimized/dezhang-kong.jpeg.webp'},
       { name: 'Guangtai Wang', role: '研究員 · PhD, Macau University', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', avatar: 'people_photos/optimized/guangtai-wang.jpg.webp', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' },
       { name: 'Yan Luo', role: '研究員 · PhD, Hefei University of Technology', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/optimized/luo-yan.png.webp', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: 'Yinlong Li', role: '研究員 · PhD, Harbin Institute of Technology', email: '', link: '', avatar: 'people_photos/optimized/yinlong-li.png.webp' },
       { name: 'Wenpeng Xing', role: '研究員 · PhD, Hong Kong Baptist University', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/optimized/wenpeng-xing.png.webp', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: '研究アシスタント',
@@ -565,6 +569,7 @@ window.RESUME = {
       { name: '콩더장', role: '연구원 · PhD, 저장대학 (Zhejiang University)', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/optimized/dezhang-kong.jpeg.webp'},
       { name: '왕광타이', role: '연구원 · PhD, 마카오대학', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', avatar: 'people_photos/optimized/guangtai-wang.jpg.webp', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' },
       { name: '로옌', role: '연구원 · PhD, Hefei University of Technology', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/optimized/luo-yan.png.webp', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: '리인룽', role: '연구원 · PhD, Harbin Institute of Technology', email: '', link: '', avatar: 'people_photos/optimized/yinlong-li.png.webp' },
       { name: '싱원펑', role: '연구원 · PhD, 홍콩침회대학 (Hong Kong Baptist University)', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/optimized/wenpeng-xing.png.webp', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: '연구 보조원',
@@ -697,6 +702,7 @@ window.RESUME = {
       { name: 'Dezhang Kong', role: 'Researcher · PhD, Zhejiang University', email: 'kdz@zju.edu.cn', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=DMKe8qYAAAAJ&hl=en' , avatar: 'people_photos/optimized/dezhang-kong.jpeg.webp'},
       { name: 'Guangtai Wang', role: 'Researcher · PhD, Macau University', email: 'Wanggt2020@outlook.com', link: '', gender: 'male', scholar: 'https://scholar.google.com/citations?user=vSHG7U0AAAAJ&hl=en' , avatar: 'people_photos/optimized/guangtai-wang.jpg.webp'},
       { name: 'Yan Luo', role: 'Researcher · PhD, Hefei University of Technology', email: 'luoyan960320@gmail.com', link: '', gender: 'male', avatar: 'people_photos/optimized/luo-yan.png.webp', scholar: 'https://scholar.google.com/citations?user=7rQzpU8AAAAJ&hl=en' },
+      { name: 'Yinlong Li', role: 'Researcher · PhD, Harbin Institute of Technology', email: '', link: '', avatar: 'people_photos/optimized/yinlong-li.png.webp' },
       { name: 'Wenpeng Xing', role: 'Researcher · PhD, Hong Kong Baptist University', email: 'wpxing@zju.edu.cn', link: '', gender: 'male', avatar: 'people_photos/optimized/wenpeng-xing.png.webp', scholar: 'https://scholar.google.com/citations?user=2S80TvwAAAAJ&hl=en' }
     ],
     scholarsTitle: 'Research Assistants',
