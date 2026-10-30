@@ -148,6 +148,20 @@
     }
   };
   Object.keys(agenda).forEach(function(lang) { copy[lang].agenda = agenda[lang]; });
+  var figureCopy = {
+    zh: {hint:'论文方法图 · 点击放大', source:'论文来源', original:'打开原尺寸图片', close:'关闭大图', captions:['AttnDiff · 模型指纹提取流程','FIDES · 证据引导的解码框架','MCP-Guard · 分层交互防护架构']},
+    zhtw: {hint:'論文方法圖 · 點擊放大', source:'論文來源', original:'開啟原尺寸圖片', close:'關閉大圖', captions:['AttnDiff · 模型指紋提取流程','FIDES · 證據引導的解碼框架','MCP-Guard · 分層互動防護架構']},
+    en: {hint:'Paper figure · Click to enlarge', source:'Source paper', original:'Open full-size image', close:'Close figure', captions:['AttnDiff · Model fingerprint extraction','FIDES · Evidence-guided decoding','MCP-Guard · Layered interaction defense']},
+    ja: {hint:'論文の手法図 · クリックで拡大', source:'出典論文', original:'原寸画像を開く', close:'図を閉じる', captions:['AttnDiff · モデル指紋の抽出','FIDES · 証拠に基づくデコーディング','MCP-Guard · 階層的な対話防御']},
+    ko: {hint:'논문 방법도 · 클릭하여 확대', source:'출처 논문', original:'원본 크기로 보기', close:'그림 닫기', captions:['AttnDiff · 모델 지문 추출','FIDES · 근거 기반 디코딩','MCP-Guard · 계층적 상호작용 방어']},
+    th: {hint:'แผนภาพจากบทความ · คลิกเพื่อขยาย', source:'บทความต้นทาง', original:'เปิดภาพขนาดเต็ม', close:'ปิดภาพ', captions:['AttnDiff · การสกัดลายนิ้วมือโมเดล','FIDES · การถอดรหัสตามหลักฐาน','MCP-Guard · การป้องกันปฏิสัมพันธ์หลายชั้น']}
+  };
+  Object.keys(figureCopy).forEach(function(lang) { copy[lang].figure = figureCopy[lang]; });
+  window.RESEARCH_FIGURES = [
+    {name:'AttnDiff', stem:'attndiff', width:900, height:517, url:'https://arxiv.org/abs/2604.05502'},
+    {name:'FIDES', stem:'fides', width:900, height:396, url:'https://aclanthology.org/2026.emnlp-main.1772/'},
+    {name:'MCP-Guard', stem:'mcp-guard', width:900, height:355, url:'https://aclanthology.org/2026.findings-acl.240/'}
+  ];
   window.RESEARCH_COPY = copy;
   Object.keys(copy).forEach(function (lang) {
     var d = window.RESUME[lang], c = copy[lang];

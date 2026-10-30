@@ -5,7 +5,7 @@
   <meta name="description" content="IFRC 围绕大模型与智能体安全及可信治理，研究模型来源验证、可靠生成与交互执行安全。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Intelligence Fusion Research Center</title>
-  <link rel="stylesheet" href="styles.css?v=20261030c">
+  <link rel="stylesheet" href="styles.css?v=20261030-figures">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -153,6 +153,11 @@
     <section id="join" class="section"><div class="container join-panel"><h2 id="join-title"></h2><p id="join-copy"></p><div class="join-links"><a class="btn btn-primary" id="join-contact" href="mailto:contact@zju-if.com"></a><a class="btn" id="join-recruit" href="mailto:recruit@zju-if.com"></a></div></div></section>
 
     <!-- Lightbox for image viewing -->
+    <dialog id="research-figure-dialog" class="research-figure-dialog" aria-labelledby="research-figure-dialog-title">
+      <div class="research-figure-toolbar"><h2 id="research-figure-dialog-title"></h2><button id="research-figure-close" type="button" aria-label="关闭大图">×</button></div>
+      <div class="research-figure-full-wrap"><img id="research-figure-full" alt=""></div>
+      <div class="research-figure-links"><a id="research-figure-source" target="_blank" rel="noopener"></a><a id="research-figure-original" target="_blank" rel="noopener"></a></div>
+    </dialog>
     <div class="lightbox" id="lightbox">
       <span class="lightbox-close" id="lightbox-close">&times;</span>
       <img id="lightbox-img" src="" alt="Gallery image">
@@ -196,8 +201,8 @@
   <script src="content.js?v=20261030-avatars"></script>
   <script src="papers.js?v=20261030c"></script>
   <script src="patents-data.js?v=20261030c"></script>
-  <script src="research-content.js?v=20261030c"></script>
-  <script src="script.js?v=20261030c"></script>
+  <script src="research-content.js?v=20261030-figures"></script>
+  <script src="script.js?v=20261030-figures"></script>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>

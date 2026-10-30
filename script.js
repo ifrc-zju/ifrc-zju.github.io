@@ -633,7 +633,9 @@
     }
     put('research-relation', agenda.relation); document.getElementById('research-relation').lang = evLang;
     document.getElementById('research-cards').innerHTML = c.titles.map(function (title, i) {
-      return '<article class="research-card" id="direction-'+i+'"><span class="research-number">0'+(i+1)+'</span><h3>'+escHtml(title)+'</h3><p class="research-question">'+escHtml(c.questions[i])+'</p><p class="research-problem">'+escHtml(c.bodies[i])+'</p><div class="research-current"><h4>'+escHtml(agenda.currentLabel)+'</h4><ul>'+agenda.current[i].map(function(item){return '<li>'+escHtml(item)+'</li>';}).join('')+'</ul></div><div class="research-next"><h4>'+escHtml(agenda.nextLabel)+'</h4><p>'+escHtml(agenda.next[i])+'</p></div><a href="#publications" data-topic="'+i+'">'+escHtml(c.labels[3])+' →</a></article>';
+      var fig = window.RESEARCH_FIGURES[i];
+      var caption = c.figure.captions[i];
+      return '<article class="research-card" id="direction-'+i+'"><span class="research-number">0'+(i+1)+'</span><h3>'+escHtml(title)+'</h3><p class="research-question">'+escHtml(c.questions[i])+'</p><p class="research-problem">'+escHtml(c.bodies[i])+'</p><figure class="research-figure"><button type="button" class="research-figure-button" data-figure="'+i+'" aria-haspopup="dialog" aria-controls="research-figure-dialog" aria-label="'+escHtml(caption+' — '+c.figure.hint)+'"><img src="research_figures/'+fig.stem+'-preview.webp" width="'+fig.width+'" height="'+fig.height+'" alt="'+escHtml(caption)+'" loading="lazy" decoding="async"><span class="research-figure-hint">'+escHtml(c.figure.hint)+' <span aria-hidden="true">⤢</span></span></button><figcaption><strong>'+escHtml(caption)+'</strong><a href="'+fig.url+'" target="_blank" rel="noopener">'+escHtml(c.figure.source)+' · Fig. 1 ↗</a></figcaption></figure><a href="#publications" data-topic="'+i+'">'+escHtml(c.labels[3])+' →</a></article>';
     }).join('');
     document.querySelectorAll('[data-topic]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('paper-topic').value=a.dataset.topic;document.getElementById('paper-search').value='';filterPapers();});});
     put('selected-title', c.labels[2]); put('selected-intro',c.featuredIntro); document.getElementById('selected-intro').lang=evLang;
@@ -729,7 +731,44 @@
     document.getElementById('paper-topic').addEventListener('change', filterPapers);
     // Setup lightbox (gallery will be rendered by renderDynamicContent)
     setupLightbox();
+    setupResearchFigureDialog();
   });
+
+  function setupResearchFigureDialog() {
+    var cards = document.getElementById('research-cards');
+    var dialog = document.getElementById('research-figure-dialog');
+    if (!cards || !dialog) return;
+    var previousOverflow = '';
+    cards.addEventListener('click', function(event) {
+      var button = event.target.closest('[data-figure]');
+      if (!button || !cards.contains(button)) return;
+      var index = Number(button.dataset.figure);
+      var fig = window.RESEARCH_FIGURES[index];
+      var c = window.RESEARCH_COPY[currentLang].figure;
+      var fullUrl = 'research_figures/' + fig.stem + '-full.webp';
+      var img = document.getElementById('research-figure-full');
+      img.src = fullUrl;
+      img.alt = c.captions[index];
+      document.getElementById('research-figure-dialog-title').textContent = c.captions[index];
+      var source = document.getElementById('research-figure-source');
+      source.href = fig.url;
+      source.textContent = c.source + ' · Fig. 1 ↗';
+      var original = document.getElementById('research-figure-original');
+      original.href = fullUrl;
+      original.textContent = c.original + ' ↗';
+      document.getElementById('research-figure-close').setAttribute('aria-label', c.close);
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      dialog.showModal();
+    });
+    document.getElementById('research-figure-close').addEventListener('click', function() { dialog.close(); });
+    dialog.addEventListener('close', function() { document.body.style.overflow = previousOverflow; });
+    dialog.addEventListener('click', function(event) {
+      if (event.target !== dialog) return;
+      var rect = dialog.getBoundingClientRect();
+      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+    });
+  }
 
 
   function renderGallery() {
