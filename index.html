@@ -2,9 +2,10 @@
 <html lang="zh-CN" data-lang="zh">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="IFRC 围绕大模型与智能体安全及可信治理，研究模型来源验证、可靠生成与交互执行安全。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Intelligence Fusion Research Center</title>
-  <link rel="stylesheet" href="styles.css?v=20260611s">
+  <link rel="stylesheet" href="styles.css?v=20261030c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,14 +53,7 @@
         <p class="hero-subtitle" id="hero-subtitle"></p>
         <p class="hero-desc" id="hero-desc"></p>
         <p class="hero-pi" id="hero-pi"></p>
-        <a href="#news" class="btn btn-primary" id="hero-cta"></a>
-      </div>
-    </section>
-
-    <section id="news" class="section">
-      <div class="container">
-        <h2 id="news-title"></h2>
-        <div class="news-list" id="news-list"></div>
+        <a href="#research" class="btn btn-primary" id="hero-cta"></a>
       </div>
     </section>
 
@@ -73,9 +67,49 @@
     <section id="research" class="section section-research-topology">
       <div class="container">
         <h2 id="research-title"></h2>
+        <div class="research-vision">
+          <div><p class="research-eyebrow" id="research-vision-label"></p><h3 id="research-vision-title"></h3><p id="research-positioning" class="research-lead"></p></div>
+          <aside class="research-why"><h4 id="research-why-title"></h4><p id="research-why-copy"></p></aside>
+        </div>
+        <div class="research-map" aria-labelledby="research-map-title">
+          <p class="research-eyebrow" id="research-map-label"></p>
+          <h3 id="research-map-title"></h3>
+          <p id="research-relation" class="section-intro"></p>
+          <ol id="research-map-steps" class="research-map-steps"></ol>
+          <p id="research-map-feedback" class="research-map-feedback"></p>
+        </div>
+        <div class="research-work-heading"><p class="research-eyebrow" id="research-work-label"></p><h3 id="research-positioning-title"></h3></div>
+        <div id="research-cards" class="research-grid"></div>
+        <div class="research-outlook" aria-labelledby="research-outlook-title">
+          <p class="research-eyebrow" id="research-outlook-label"></p>
+          <h3 id="research-outlook-title"></h3>
+          <p id="research-outlook-intro" class="section-intro"></p>
+          <div id="research-outlook-grid" class="research-outlook-grid"></div>
+        </div>
       </div>
-      <div class="research-topology-frame-outer">
-        <iframe id="research-topology-iframe" class="research-topology-iframe" src="agent-trust-governance.html?embed=1&amp;lang=zh&amp;v=20260611t" title="" loading="lazy" scrolling="no"></iframe>
+    </section>
+
+    <section id="selected" class="section"><div class="container"><h2 id="selected-title"></h2><p class="section-intro" id="selected-intro"></p><div class="selected-grid" id="selected-grid"></div></div></section>
+
+    <section id="publications" class="section section-papers-rich">
+      <div class="container">
+        <h2 id="pub-title"></h2>
+        <p id="publication-note" class="section-intro"></p>
+        <div class="paper-tools"><label><span id="paper-search-label"></span><input type="search" id="paper-search"></label><label><span id="paper-topic-label"></span><select id="paper-topic"></select></label></div><p id="paper-empty" hidden role="status"></p>
+        <div class="papers-layout">
+          <section class="paper-panel">
+            <h3 class="paper-panel-title" id="pub-journal-label"></h3>
+            <div class="papers-grid" id="papers-journal"></div>
+          </section>
+          <section class="paper-panel">
+            <h3 class="paper-panel-title" id="pub-conf-label"></h3>
+            <div class="papers-grid" id="papers-conf"></div>
+          </section>
+          <section class="paper-panel">
+            <h3 class="paper-panel-title" id="pub-preprint-label"></h3>
+            <div class="papers-grid" id="papers-preprints"></div>
+          </section>
+        </div>
       </div>
     </section>
 
@@ -95,23 +129,10 @@
       </div>
     </section>
 
-    <section id="publications" class="section section-papers-rich">
+    <section id="news" class="section">
       <div class="container">
-        <h2 id="pub-title"></h2>
-        <div class="papers-layout">
-          <section class="paper-panel">
-            <h3 class="paper-panel-title" id="pub-journal-label"></h3>
-            <div class="papers-grid" id="papers-journal"></div>
-          </section>
-          <section class="paper-panel">
-            <h3 class="paper-panel-title" id="pub-conf-label"></h3>
-            <div class="papers-grid" id="papers-conf"></div>
-          </section>
-          <section class="paper-panel">
-            <h3 class="paper-panel-title" id="pub-preprint-label"></h3>
-            <div class="papers-grid" id="papers-preprints"></div>
-          </section>
-        </div>
+        <h2 id="news-title"></h2>
+        <div class="news-list" id="news-list"></div>
       </div>
     </section>
 
@@ -128,6 +149,8 @@
         <div class="gallery-grid" id="gallery-content"></div>
       </div>
     </section>
+
+    <section id="join" class="section"><div class="container join-panel"><h2 id="join-title"></h2><p id="join-copy"></p><div class="join-links"><a class="btn btn-primary" id="join-contact" href="mailto:contact@zju-if.com"></a><a class="btn" id="join-recruit" href="mailto:recruit@zju-if.com"></a></div></div></section>
 
     <!-- Lightbox for image viewing -->
     <div class="lightbox" id="lightbox">
@@ -166,14 +189,15 @@
         </div>
       </div>
       </div>
-      <p class="copyright">© 2025 <span id="copyright-center-name">Intelligence Fusion Research Center</span></p>
+      <p class="copyright">© 2026 <span id="copyright-center-name">Intelligence Fusion Research Center</span></p>
     </div>
   </footer>
 
-  <script src="content.js?v=20260611p"></script>
-  <script src="papers.js?v=20260611r"></script>
-  <script src="patents-data.js?v=20260611b"></script>
-  <script src="script.js?v=20260611s"></script>
+  <script src="content.js?v=20261030c"></script>
+  <script src="papers.js?v=20261030c"></script>
+  <script src="patents-data.js?v=20261030c"></script>
+  <script src="research-content.js?v=20261030c"></script>
+  <script src="script.js?v=20261030c"></script>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>

@@ -32,28 +32,21 @@
       renderStaticStrings(d, lang);
     }
     if (window.RESUME) renderDynamicContent(lang);
+    renderResearch(lang);
+    filterPapers();
   }
 
   function renderNav(nav) {
     var el = document.getElementById('main-nav');
     if (!el || !nav) return;
-    var html = '<ul><li><a href="#content">' + nav.home + '</a></li><li><a href="#news">' + nav.news + '</a></li><li><a href="#about">' + nav.about + '</a></li><li><a href="#research">' + nav.research + '</a></li><li><a href="#people">' + nav.people + '</a></li><li><a href="#publications">' + nav.papers + '</a></li><li><a href="#patents">' + nav.patents + '</a></li><li><a href="#gallery">' + nav.gallery + '</a></li><li><a href="#contact">' + nav.contact + '</a></li></ul>';
+    var html = '<ul>' + [['content',nav.home],['about',nav.about],['research',nav.research],['publications',nav.papers],['people',nav.people],['news',nav.news],['join',nav.contact]].map(function(x) { return '<li><a href="#'+x[0]+'">'+x[1]+'</a></li>'; }).join('') + '</ul>';
     el.innerHTML = html;
   }
 
   function renderQuickNav(nav) {
     var el = document.getElementById('quick-nav');
     if (!el || !nav) return;
-    var links = [
-      { href: '#news', label: nav.news },
-      { href: '#about', label: nav.about },
-      { href: '#research', label: nav.research },
-      { href: '#people', label: nav.people },
-      { href: '#publications', label: nav.papers },
-      { href: '#patents', label: nav.patents },
-      { href: '#gallery', label: nav.gallery },
-      { href: '#contact', label: nav.contact }
-    ];
+    var links = [{href:'#about',label:nav.about},{href:'#research',label:nav.research},{href:'#publications',label:nav.papers},{href:'#people',label:nav.people},{href:'#news',label:nav.news},{href:'#join',label:nav.contact}];
     el.innerHTML = links.map(function (l) {
       return '<a href="' + l.href + '">' + l.label + '</a>';
     }).join('');
@@ -91,7 +84,7 @@
     var heroDesc = document.getElementById('hero-desc');
     if (heroDesc && d.heroDesc) heroDesc.textContent = d.heroDesc;
     var heroPi = document.getElementById('hero-pi');
-    if (heroPi && d.heroPi) heroPi.innerHTML = d.heroPi;
+    if (heroPi) heroPi.innerHTML = d.heroPi || '';
     var heroCta = document.getElementById('hero-cta');
     if (heroCta && d.heroCta) heroCta.textContent = d.heroCta;
     var aboutTitle = document.getElementById('about-title');
@@ -556,22 +549,13 @@
     var ccf = text.match(/\bCCF-([ABC])\b/i);
     if (ccf) {
       var tier = ccf[1].toUpperCase();
-      badges.push({ label: 'CCF-' + tier, key: 'ccf-' + tier.toLowerCase() });
+      /* Ratings require a dated source before public display. */
+      // badges.push({ label: 'CCF-' + tier, key: 'ccf-' + tier.toLowerCase() });
       text = text.replace(/\s*\.?\s*CCF-[ABC]\s*\.?\s*/gi, ' ');
     }
 
     text = text.replace(/\s*\.?\s*IF[:\s]+[\d.]+\s*\.?\s*/gi, ' ');
     text = text.replace(/\s*\.?\s*高IF\s*\.?\s*/g, ' ');
-
-    if (section === 'journal') {
-      var ifMeta = resolveJournalIF(typeof item === 'object' ? item : null, text);
-      if (ifMeta) {
-        badges.push({
-          label: formatIFLabel(ifMeta.value, ifMeta.note, lang),
-          key: ifMeta.note === 'composite' ? 'if-composite' : 'if'
-        });
-      }
-    }
 
     text = text.replace(/\s{2,}/g, ' ').replace(/\s+\./g, '.').replace(/\.\s*\./g, '.').trim();
     return { bodyHtml: text, badges: badges };
@@ -579,7 +563,7 @@
 
   function renderPaperCard(item, sectionKey, lang) {
     var parsed = parsePaperCite(item, sectionKey, lang);
-    var html = '<article class="paper-card">';
+    var html = '<article class="paper-card" data-research-group="' + window.paperResearchGroup(item.cite) + '">';
     parsed.badges.forEach(function (b) {
       html += '<span class="paper-card-badge paper-badge-' + b.key + '">' + escHtml(b.label) + '</span>';
     });
@@ -594,7 +578,8 @@
     var keyToId = { journal: 'papers-journal', conference: 'papers-conf', preprints: 'papers-preprints' };
 
     function getYear(cite) {
-      var match = cite.match(/\b(20\d{2})\b/);
+      var years = cite.replace(/<[^>]*>/g, '').match(/\b(20\d{2})\b/g);
+      var match = years && [years[years.length - 1], years[years.length - 1]];
       return match ? parseInt(match[1], 10) : 0;
     }
 
@@ -612,6 +597,64 @@
         return renderPaperCard(item, key, lang);
       }).join('');
     });
+  }
+
+  function renderResearch(lang) {
+    var c = window.RESEARCH_COPY[lang] || window.RESEARCH_COPY.en;
+    var agenda = c.agenda;
+    var evLang = c.evidenceLang || lang;
+    function put(id, value) { document.getElementById(id).textContent = value; }
+    put('research-positioning-title', c.title);
+    put('research-vision-label', agenda.visionLabel);
+    put('research-vision-title', agenda.visionTitle);
+    put('research-positioning', agenda.vision);
+    put('research-why-title', agenda.whyTitle);
+    put('research-why-copy', agenda.why);
+    put('research-map-label', agenda.mapLabel);
+    put('research-map-title', agenda.mapTitle);
+    put('research-map-feedback', agenda.feedback);
+    put('research-work-label', agenda.workLabel);
+    put('research-outlook-label', agenda.outlookLabel);
+    put('research-outlook-title', agenda.outlookTitle);
+    put('research-outlook-intro', agenda.outlookIntro);
+    document.getElementById('research-map-steps').innerHTML = agenda.steps.map(function(step, i) {
+      return '<li><span class="research-stage">'+escHtml(step[2])+'</span><h4><a href="#direction-'+i+'">'+escHtml(step[0])+' <span aria-hidden="true">↗</span></a></h4><p>'+escHtml(step[1])+'</p></li>';
+    }).join('');
+    document.getElementById('research-outlook-grid').innerHTML = agenda.outlook.map(function(item, i) {
+      return '<article><span class="research-outlook-number" aria-hidden="true">0'+(i+1)+'</span><h4>'+escHtml(item[0])+'</h4><p>'+escHtml(item[1])+'</p></article>';
+    }).join('');
+    // Refresh only the research summary within the restored original About section.
+    var aboutFocus = document.getElementById('about-focus-title');
+    if (aboutFocus) {
+      aboutFocus.textContent = c.labels[4];
+      var focusPanel = aboutFocus.parentElement;
+      focusPanel.querySelector('.about-lede').textContent = c.title + '：' + c.intro;
+      focusPanel.querySelector('a[href="#research"]').textContent = window.RESUME[lang].nav.research + ' →';
+    }
+    put('research-relation', agenda.relation); document.getElementById('research-relation').lang = evLang;
+    document.getElementById('research-cards').innerHTML = c.titles.map(function (title, i) {
+      return '<article class="research-card" id="direction-'+i+'"><span class="research-number">0'+(i+1)+'</span><h3>'+escHtml(title)+'</h3><p class="research-question">'+escHtml(c.questions[i])+'</p><p class="research-problem">'+escHtml(c.bodies[i])+'</p><div class="research-current"><h4>'+escHtml(agenda.currentLabel)+'</h4><ul>'+agenda.current[i].map(function(item){return '<li>'+escHtml(item)+'</li>';}).join('')+'</ul></div><div class="research-next"><h4>'+escHtml(agenda.nextLabel)+'</h4><p>'+escHtml(agenda.next[i])+'</p></div><a href="#publications" data-topic="'+i+'">'+escHtml(c.labels[3])+' →</a></article>';
+    }).join('');
+    document.querySelectorAll('[data-topic]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('paper-topic').value=a.dataset.topic;document.getElementById('paper-search').value='';filterPapers();});});
+    put('selected-title', c.labels[2]); put('selected-intro',c.featuredIntro); document.getElementById('selected-intro').lang=evLang;
+    document.getElementById('selected-grid').innerHTML = window.SELECTED_RESEARCH.map(function(p,i){return '<article class="selected-card"><span class="paper-meta">'+escHtml(c.titles[p.group])+'</span><h3><a target="_blank" rel="noopener" href="'+p.url+'">'+p.name+' ↗</a></h3><p class="selected-venue">'+p.venue+' · <span lang="'+evLang+'">'+c[p.status]+'</span></p><p lang="'+evLang+'">'+escHtml(c.contributions[i])+'</p><p class="evidence-limit" lang="'+evLang+'">'+escHtml(c.limits[i])+'</p></article>';}).join('');
+    put('publication-note',c.note); document.getElementById('publication-note').lang=evLang;
+    put('paper-search-label',c.labels[9]); put('paper-topic-label', window.RESUME[lang].nav.research);
+    var topic=document.getElementById('paper-topic'), previous=topic.value;
+    topic.innerHTML='<option value="all">'+escHtml(c.labels[7])+'</option>'+c.titles.map(function(t,i){return '<option value="'+i+'">'+escHtml(t)+'</option>';}).join('')+'<option value="related">'+escHtml(c.labels[8])+'</option>';
+    topic.value=previous || 'all'; put('paper-empty',c.labels[11]);
+    put('join-title',c.labels[6]); put('join-copy',c.join); document.getElementById('join-copy').lang=evLang;
+    put('join-contact',c.contact[0]);put('join-recruit',c.contact[1]);
+    document.getElementById('join-contact').lang=evLang;document.getElementById('join-recruit').lang=evLang;
+  }
+  function filterPapers() {
+    var topic=document.getElementById('paper-topic').value || 'all', query=document.getElementById('paper-search').value.trim().toLowerCase(), count=0;
+    document.querySelectorAll('#publications .paper-card').forEach(function(card){
+      var show=(topic==='all' || card.dataset.researchGroup===topic) && card.textContent.toLowerCase().indexOf(query)!==-1;
+      card.hidden=!show;if(show)count++;
+    });
+    document.querySelectorAll('#publications .paper-panel').forEach(function(panel){panel.hidden=!panel.querySelector('.paper-card:not([hidden])');});
+    document.getElementById('paper-empty').hidden=count>0;
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -664,11 +707,8 @@
         nav.classList.toggle('is-open');
       });
       /* 手机端：点击导航链接后关闭菜单 */
-      nav.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          nav.classList.remove('is-open');
-          toggle.setAttribute('aria-expanded', 'false');
-        });
+      nav.addEventListener('click', function (event) {
+        if (event.target.closest('a')) { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded','false'); }
       });
     }
 
@@ -685,6 +725,8 @@
       window.addEventListener('resize', updateHeaderOverHero);
     }
 
+    document.getElementById('paper-search').addEventListener('input', filterPapers);
+    document.getElementById('paper-topic').addEventListener('change', filterPapers);
     // Setup lightbox (gallery will be rendered by renderDynamicContent)
     setupLightbox();
   });
@@ -729,17 +771,20 @@
     var lightbox = document.getElementById('lightbox');
     var lightboxImg = document.getElementById('lightbox-img');
     var lightboxClose = document.getElementById('lightbox-close');
-    var galleryItems = document.querySelectorAll('.gallery-item img');
+    var gallery = document.getElementById('gallery-content');
     
     if (!lightbox || !lightboxImg) return;
     
-    galleryItems.forEach(function(img) {
-      img.addEventListener('click', function() {
+    if (gallery) {
+      gallery.addEventListener('click', function(event) {
+        var img = event.target.closest('.gallery-item img');
+        if (!img || !gallery.contains(img)) return;
         lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
         lightbox.style.display = 'flex';
         document.body.style.overflow = 'hidden';
       });
-    });
+    }
     
     function closeLightbox() {
       lightbox.style.display = 'none';
